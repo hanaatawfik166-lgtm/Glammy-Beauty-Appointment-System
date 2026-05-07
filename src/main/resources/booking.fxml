@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.Circle?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1300.0"
+            xmlns="http://javafx.com/javafx/21"
+            xmlns:fx="http://javafx.com/fxml/1"
+            style="-fx-background-color: linear-gradient(to bottom right, #FFF5F7, #FFE3EC);">
+
+    <children>
+
+        <!-- Sticky Notes Background -->
+        <Pane AnchorPane.topAnchor="0.0"
+              AnchorPane.bottomAnchor="0.0"
+              AnchorPane.leftAnchor="0.0"
+              AnchorPane.rightAnchor="0.0">
+
+            <!-- Note 1 -->
+            <VBox layoutX="40" layoutY="40"
+                  rotate="-12"
+                  prefWidth="150"
+                  prefHeight="100"
+                  style="-fx-background-color: #FFD6E7;
+                         -fx-background-radius: 15;
+                         -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 8,0,0,3);">
+
+                <padding>
+                    <Insets top="15" right="15" bottom="15" left="15"/>
+                </padding>
+
+                <Label text="Hair Treatment ✨"
+                       style="-fx-font-size: 14px;
+                              -fx-font-weight: bold;
+                              -fx-text-fill: #B85C8E;"/>
+            </VBox>
+
+            <!-- Note 2 -->
+            <VBox layoutX="1080" layoutY="70"
+                  rotate="10"
+                  prefWidth="160"
+                  prefHeight="100"
+                  style="-fx-background-color: #FFEAA7;
+                         -fx-background-radius: 15;
+                         -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 8,0,0,3);">
+
+                <padding>
+                    <Insets top="15" right="15" bottom="15" left="15"/>
+                </padding>
+
+                <Label text="Nails Appointment 💅"
+                       style="-fx-font-size: 14px;
+                              -fx-font-weight: bold;
+                              -fx-text-fill: #9C6B00;"/>
+            </VBox>
+
+            <!-- Note 3 -->
+            <VBox layoutX="80" layoutY="500"
+                  rotate="8"
+                  prefWidth="150"
+                  prefHeight="100"
+                  style="-fx-background-color: #C8F7C5;
+                         -fx-background-radius: 15;
+                         -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 8,0,0,3);">
+
+                <padding>
+                    <Insets top="15" right="15" bottom="15" left="15"/>
+                </padding>
+
+                <Label text="Facial Session 🌸"
+                       style="-fx-font-size: 14px;
+                              -fx-font-weight: bold;
+                              -fx-text-fill: #4C8A4A;"/>
+            </VBox>
+
+            <!-- Note 4 -->
+            <VBox layoutX="1050" layoutY="500"
+                  rotate="-10"
+                  prefWidth="170"
+                  prefHeight="100"
+                  style="-fx-background-color: #DCC6FF;
+                         -fx-background-radius: 15;
+                         -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 8,0,0,3);">
+
+                <padding>
+                    <Insets top="15" right="15" bottom="15" left="15"/>
+                </padding>
+
+                <Label text="Makeup Booking 💄"
+                       style="-fx-font-size: 14px;
+                              -fx-font-weight: bold;
+                              -fx-text-fill: #6D4BB3;"/>
+            </VBox>
+
+        </Pane>
+
+        <!-- Decorative Circles -->
+        <Circle centerX="120" centerY="100" radius="80"
+                fill="#FFD1E0" opacity="0.25"/>
+
+        <Circle centerX="1180" centerY="140" radius="100"
+                fill="#FFC2D4" opacity="0.20"/>
+
+        <Circle centerX="180" centerY="620" radius="70"
+                fill="#FFB6C1" opacity="0.18"/>
+
+        <Circle centerX="1120" centerY="590" radius="90"
+                fill="#FFD6E5" opacity="0.20"/>
+
+        <!-- Center Booking Card -->
+        <StackPane AnchorPane.topAnchor="0.0"
+                   AnchorPane.bottomAnchor="0.0"
+                   AnchorPane.leftAnchor="0.0"
+                   AnchorPane.rightAnchor="0.0">
+
+            <VBox spacing="20"
+                  alignment="CENTER"
+                  maxWidth="460"
+                  style="-fx-background-color: rgba(255,255,255,0.96);
+                         -fx-background-radius: 35;
+                         -fx-border-radius: 35;
+                         -fx-border-color: #FFD1DC;
+                         -fx-border-width: 2;
+                         -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.18), 25, 0, 0, 8);">
+
+                <padding>
+                    <Insets top="40" right="40" bottom="40" left="40"/>
+                </padding>
+
+                <!-- Header -->
+                <VBox alignment="CENTER" spacing="8">
+
+                    <Label text="Book Appointment"
+                           style="-fx-font-size: 32px;
+                                  -fx-font-weight: bold;
+                                  -fx-text-fill: #D86F9B;" />
+
+                    <Label text="Glow up starts here ✨"
+                           style="-fx-font-size: 15px;
+                                  -fx-text-fill: #C98AA5;" />
+
+                </VBox>
+
+                <!-- Name -->
+                <TextField promptText="Full Name"
+                           prefWidth="320"
+                           prefHeight="45"
+                           style="-fx-background-radius: 18;
+                                  -fx-font-size: 14px;" />
+
+                <!-- Service -->
+                <ComboBox prefWidth="320"
+                          prefHeight="45"
+                          promptText="Choose Service"
+                          style="-fx-background-radius: 18;
+                                 -fx-font-size: 14px;" />
+
+                <!-- Date -->
+                <DatePicker prefWidth="320"
+                            prefHeight="45"
+                            style="-fx-background-radius: 18;
+                                   -fx-font-size: 14px;" />
+
+                <!-- Time -->
+                <ComboBox prefWidth="320"
+                          prefHeight="45"
+                          promptText="Choose Time"
+                          style="-fx-background-radius: 18;
+                                 -fx-font-size: 14px;" />
+
+                <!-- Notes -->
+                <TextArea promptText="Special Notes..."
+                          prefWidth="320"
+                          prefHeight="100"
+                          wrapText="true"
+                          style="-fx-background-radius: 18;
+                                 -fx-font-size: 14px;" />
+
+                <!-- Buttons -->
+                <HBox spacing="15" alignment="CENTER">
+
+                    <Button text="Confirm"
+                            prefWidth="145"
+                            prefHeight="45"
+                            style="-fx-background-color: #E8A0BF;
+                                   -fx-text-fill: white;
+                                   -fx-font-size: 15px;
+                                   -fx-font-weight: bold;
+                                   -fx-background-radius: 25;" />
+
+                    <Button text="Cancel"
+                            prefWidth="145"
+                            prefHeight="45"
+                            style="-fx-background-color: white;
+                                   -fx-text-fill: #D86F9B;
+                                   -fx-font-size: 15px;
+                                   -fx-font-weight: bold;
+                                   -fx-border-color: #E8A0BF;
+                                   -fx-border-width: 2;
+                                   -fx-background-radius: 25;
+                                   -fx-border-radius: 25;" />
+
+                </HBox>
+
+            </VBox>
+
+        </StackPane>
+
+    </children>
+
+</AnchorPane>

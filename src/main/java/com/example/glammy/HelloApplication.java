@@ -11,7 +11,11 @@ public class HelloApplication extends Application {
     public void start(Stage stage) throws Exception {
 
         FXMLLoader fxmlLoader =
+
                 new FXMLLoader(getClass().getResource("/appointments.fxml"));
+
+        new FXMLLoader(getClass().getResource("/register.fxml"));
+
 
         Scene scene = new Scene(fxmlLoader.load(), 900, 600);
 
