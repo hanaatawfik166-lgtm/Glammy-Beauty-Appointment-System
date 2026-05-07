@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="900.0" prefWidth="1500.0"
+            xmlns="http://javafx.com/javafx/21"
+            xmlns:fx="http://javafx.com/fxml/1"
+            style="-fx-background-color: linear-gradient(to bottom right, #FFF5F7, #FFE3EC, #FFD4E5);">
+
+    <children>
+
+        <!-- TOP DECOR -->
+        <Pane prefHeight="240"
+              AnchorPane.topAnchor="0.0"
+              AnchorPane.leftAnchor="0.0"
+              AnchorPane.rightAnchor="0.0"
+              style="-fx-background-color: rgba(255,255,255,0.18);
+                     -fx-background-radius: 0 0 100 100;" />
+
+        <!-- MAIN CONTENT -->
+        <StackPane AnchorPane.topAnchor="0.0"
+                   AnchorPane.bottomAnchor="0.0"
+                   AnchorPane.leftAnchor="0.0"
+                   AnchorPane.rightAnchor="0.0">
+
+            <VBox spacing="35"
+                  alignment="CENTER"
+                  maxWidth="1250"
+                  style="-fx-background-color: rgba(255,255,255,0.95);
+                         -fx-background-radius: 45;
+                         -fx-border-radius: 45;
+                         -fx-border-color: #FFD1DC;
+                         -fx-border-width: 2;">
+
+                <effect>
+                    <DropShadow radius="35"
+                                spread="0.08"
+                                offsetY="10"
+                                color="#F4A7C3"/>
+                </effect>
+
+                <padding>
+                    <Insets top="45" right="45" bottom="45" left="45"/>
+                </padding>
+
+                <!-- HEADER -->
+                <VBox alignment="CENTER"
+                      spacing="10">
+
+                    <Label text="Beauty Tips ✨"
+                           style="-fx-font-size: 38px;
+                                  -fx-font-weight: bold;
+                                  -fx-text-fill: #D86F9B;" />
+
+                    <Label text="Daily beauty secrets for glowing girls 💖"
+                           style="-fx-font-size: 16px;
+                                  -fx-text-fill: #B57C94;" />
+
+                </VBox>
+
+                <!-- TIPS -->
+                <HBox spacing="35"
+                      alignment="CENTER">
+
+                    <!-- SKINCARE -->
+                    <VBox spacing="18"
+                          alignment="CENTER"
+                          prefWidth="320"
+                          prefHeight="400"
+                          style="-fx-background-color: white;
+                                 -fx-background-radius: 35;
+                                 -fx-border-radius: 35;
+                                 -fx-border-color: #FFD1DC;
+                                 -fx-border-width: 2;">
+
+                        <effect>
+                            <DropShadow radius="20"
+                                        spread="0.04"
+                                        color="#F6B7CF"/>
+                        </effect>
+
+                        <padding>
+                            <Insets top="30" right="25" bottom="30" left="25"/>
+                        </padding>
+
+                        <Label text="🧴"
+                               style="-fx-font-size: 65px;" />
+
+                        <Label text="Skin Care"
+                               style="-fx-font-size: 26px;
+                                      -fx-font-weight: bold;
+                                      -fx-text-fill: #D86F9B;" />
+
+                        <Label text="Always remove makeup before sleeping and keep your skin hydrated 🌸"
+                               wrapText="true"
+                               style="-fx-font-size: 14px;
+                                      -fx-text-fill: #B57C94;" />
+
+                        <Button text="Read More"
+                                prefWidth="200"
+                                prefHeight="45"
+                                style="-fx-background-color: #E8A0BF;
+                                       -fx-text-fill: white;
+                                       -fx-font-size: 15px;
+                                       -fx-font-weight: bold;
+                                       -fx-background-radius: 22;" />
+
+                    </VBox>
+
+                    <!-- HAIR -->
+                    <VBox spacing="18"
+                          alignment="CENTER"
+                          prefWidth="320"
+                          prefHeight="400"
+                          style="-fx-background-color: white;
+                                 -fx-background-radius: 35;
+                                 -fx-border-radius: 35;
+                                 -fx-border-color: #FFD1DC;
+                                 -fx-border-width: 2;">
+
+                        <effect>
+                            <DropShadow radius="20"
+                                        spread="0.04"
+                                        color="#F6B7CF"/>
+                        </effect>
+
+                        <padding>
+                            <Insets top="30" right="25" bottom="30" left="25"/>
+                        </padding>
+
+                        <Label text="💇‍♀️"
+                               style="-fx-font-size: 65px;" />
+
+                        <Label text="Hair Tips"
+                               style="-fx-font-size: 26px;
+                                      -fx-font-weight: bold;
+                                      -fx-text-fill: #D86F9B;" />
+
+                        <Label text="Use hair masks weekly and avoid excessive heat styling ✨"
+                               wrapText="true"
+                               style="-fx-font-size: 14px;
+                                      -fx-text-fill: #B57C94;" />
+
+                        <Button text="Read More"
+                                prefWidth="200"
+                                prefHeight="45"
+                                style="-fx-background-color: #E8A0BF;
+                                       -fx-text-fill: white;
+                                       -fx-font-size: 15px;
+                                       -fx-font-weight: bold;
+                                       -fx-background-radius: 22;" />
+
+                    </VBox>
+
+                    <!-- MAKEUP -->
+                    <VBox spacing="18"
+                          alignment="CENTER"
+                          prefWidth="320"
+                          prefHeight="400"
+                          style="-fx-background-color: white;
+                                 -fx-background-radius: 35;
+                                 -fx-border-radius: 35;
+                                 -fx-border-color: #FFD1DC;
+                                 -fx-border-width: 2;">
+
+                        <effect>
+                            <DropShadow radius="20"
+                                        spread="0.04"
+                                        color="#F6B7CF"/>
+                        </effect>
+
+                        <padding>
+                            <Insets top="30" right="25" bottom="30" left="25"/>
+                        </padding>
+
+                        <Label text="💄"
+                               style="-fx-font-size: 65px;" />
+
+                        <Label text="Makeup Tips"
+                               style="-fx-font-size: 26px;
+                                      -fx-font-weight: bold;
+                                      -fx-text-fill: #D86F9B;" />
+
+                        <Label text="Choose soft pink shades for a natural glam everyday look 💕"
+                               wrapText="true"
+                               style="-fx-font-size: 14px;
+                                      -fx-text-fill: #B57C94;" />
+
+                        <Button text="Read More"
+                                prefWidth="200"
+                                prefHeight="45"
+                                style="-fx-background-color: #E8A0BF;
+                                       -fx-text-fill: white;
+                                       -fx-font-size: 15px;
+                                       -fx-font-weight: bold;
+                                       -fx-background-radius: 22;" />
+
+                    </VBox>
+
+                </HBox>
+
+            </VBox>
+
+        </StackPane>
+
+    </children>
+
+</AnchorPane>
