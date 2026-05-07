@@ -4,118 +4,125 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="600.0" prefWidth="900.0"
+<AnchorPane prefHeight="750.0"
+            prefWidth="1300.0"
             xmlns="http://javafx.com/javafx/21"
             xmlns:fx="http://javafx.com/fxml/1"
-            style="-fx-background-color: #FFF5F7;">
+            style="-fx-background-color: linear-gradient(to bottom right, #FFF5F7, #FDEBF2);">
 
     <children>
 
-        <StackPane AnchorPane.topAnchor="0.0"
-                   AnchorPane.bottomAnchor="0.0"
-                   AnchorPane.leftAnchor="0.0"
-                   AnchorPane.rightAnchor="0.0">
+        <!-- LEFT SIDE -->
+
+        <VBox prefWidth="500"
+              alignment="CENTER"
+              spacing="20"
+              style="-fx-background-color: linear-gradient(to bottom, #F8D7E3, #FCEEF5);
+                     -fx-background-radius: 0 40 40 0;"
+
+              AnchorPane.topAnchor="0"
+              AnchorPane.bottomAnchor="0"
+              AnchorPane.leftAnchor="0">
 
             <children>
 
-                <HBox maxWidth="900"
-                      maxHeight="600"
-                      prefWidth="900"
-                      prefHeight="600">
+                <Label text="💅"
+                       style="-fx-font-size: 80px;" />
 
-                    <!-- LEFT SIDE -->
+                <Label text="GLAMMY"
+                       style="-fx-font-size: 45px;
+                              -fx-font-weight: bold;
+                              -fx-text-fill: #D86F9B;" />
 
-                    <VBox prefWidth="400"
-                          alignment="CENTER"
-                          spacing="20"
-                          style="-fx-background-color: linear-gradient(to bottom, #F8D7E3, #FCEEF5);">
+                <Label text="Glow Beyond Beauty"
+                       style="-fx-font-size: 18px;
+                              -fx-text-fill: #8A6F7B;" />
 
-                        <children>
+                <Label text="Book your beauty appointments easily and elegantly."
+                       wrapText="true"
+                       maxWidth="280"
+                       style="-fx-font-size: 15px;
+                              -fx-text-fill: #8A6F7B;
+                              -fx-alignment: center;" />
 
-                            <Label text="💅"
-                                   style="-fx-font-size: 60px;" />
+            </children>
 
-                            <Label text="GLAMMY"
-                                   style="-fx-font-size: 38px;
-                                          -fx-font-weight: bold;
-                                          -fx-text-fill: #D86F9B;" />
+        </VBox>
 
-                            <Label text="Glow Beyond Beauty"
-                                   style="-fx-font-size: 18px;
-                                          -fx-text-fill: #8A6F7B;" />
+        <!-- RIGHT SIDE -->
 
-                            <Label text="Book your beauty appointments easily and elegantly."
-                                   wrapText="true"
-                                   maxWidth="250"
-                                   style="-fx-font-size: 14px;
-                                          -fx-text-fill: #8A6F7B;
-                                          -fx-alignment: center;" />
+        <VBox alignment="CENTER"
+              spacing="25"
 
-                        </children>
+              AnchorPane.topAnchor="0"
+              AnchorPane.bottomAnchor="0"
+              AnchorPane.leftAnchor="500"
+              AnchorPane.rightAnchor="0">
 
-                    </VBox>
+            <children>
 
-                    <!-- RIGHT SIDE -->
+                <!-- LOGIN CARD -->
 
-                    <VBox prefWidth="500"
-                          alignment="CENTER"
-                          spacing="18"
-                          style="-fx-background-color: white;">
+                <VBox alignment="CENTER"
+                      spacing="20"
+                      prefWidth="420"
+                      prefHeight="500"
+                      style="-fx-background-color: white;
+                             -fx-background-radius: 35;
+                             -fx-padding: 40;">
 
-                        <children>
+                    <children>
 
-                            <Label text="Welcome Back 💇"
-                                   style="-fx-font-size: 40px;
-                                          -fx-font-weight: bold;
-                                          -fx-text-fill: #D86F9B;" />
+                        <Label text="Welcome Back 💖"
+                               style="-fx-font-size: 38px;
+                                      -fx-font-weight: bold;
+                                      -fx-text-fill: #D86F9B;" />
 
-                            <TextField promptText="Enter your email"
-                                       prefWidth="280"
-                                       prefHeight="45"
+                        <Label text="Login to continue your beauty journey."
+                               style="-fx-font-size: 14px;
+                                      -fx-text-fill: #8A6F7B;" />
+
+                        <TextField promptText="Enter your email"
+                                   prefWidth="300"
+                                   prefHeight="50"
+                                   style="-fx-background-radius: 15;
+                                          -fx-font-size: 14px;
+                                          -fx-padding: 10;" />
+
+                        <PasswordField promptText="Enter your password"
+                                       prefWidth="300"
+                                       prefHeight="50"
                                        style="-fx-background-radius: 15;
                                               -fx-font-size: 14px;
                                               -fx-padding: 10;" />
 
-                            <PasswordField promptText="Enter your password"
-                                           prefWidth="280"
-                                           prefHeight="45"
-                                           style="-fx-background-radius: 15;
-                                                  -fx-font-size: 14px;
-                                                  -fx-padding: 10;" />
+                        <Button text="Login"
+                                prefWidth="300"
+                                prefHeight="50"
+                                style="-fx-background-color: #E8A0BF;
+                                       -fx-text-fill: white;
+                                       -fx-font-size: 15px;
+                                       -fx-font-weight: bold;
+                                       -fx-background-radius: 18;" />
 
-                            <Button text="Login"
-                                    prefWidth="280"
-                                    prefHeight="45"
-                                    style="-fx-background-color: #E8A0BF;
-                                           -fx-text-fill: white;
-                                           -fx-font-size: 15px;
-                                           -fx-font-weight: bold;
-                                           -fx-background-radius: 15;" />
+                        <Button text="Create Account"
+                                prefWidth="300"
+                                prefHeight="50"
+                                style="-fx-background-color: white;
+                                       -fx-text-fill: #D86F9B;
+                                       -fx-font-size: 15px;
+                                       -fx-font-weight: bold;
+                                       -fx-border-color: #E8A0BF;
+                                       -fx-border-radius: 18;
+                                       -fx-background-radius: 18;" />
 
-                            <Button text="Register"
-                                    prefWidth="280"
-                                    prefHeight="45"
-                                    style="-fx-background-color: white;
-                                           -fx-text-fill: #D86F9B;
-                                           -fx-font-size: 15px;
-                                           -fx-font-weight: bold;
-                                           -fx-border-color: #E8A0BF;
-                                           -fx-border-radius: 15;
-                                           -fx-background-radius: 15;" />
+                    </children>
 
-                        </children>
-
-                        <padding>
-                            <Insets top="20" right="20" bottom="20" left="20"/>
-                        </padding>
-
-                    </VBox>
-
-                </HBox>
+                </VBox>
 
             </children>
 
-        </StackPane>
+        </VBox>
 
     </children>
 

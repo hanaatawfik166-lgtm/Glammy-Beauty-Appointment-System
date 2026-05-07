@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="750.0"
+            prefWidth="1300.0"
+            xmlns="http://javafx.com/javafx/21"
+            xmlns:fx="http://javafx.com/fxml/1"
+            style="-fx-background-color: linear-gradient(to bottom right, #FFF5F7, #FDEBF2);">
+
+    <children>
+
+        <!-- SIDEBAR -->
+
+        <VBox prefWidth="250"
+              spacing="25"
+              style="-fx-background-color: white;
+                     -fx-padding: 30;
+                     -fx-background-radius: 0 30 30 0;"
+
+              AnchorPane.topAnchor="0"
+              AnchorPane.bottomAnchor="0"
+              AnchorPane.leftAnchor="0">
+
+            <children>
+
+                <Label text="GLAMMY ✨"
+                       style="-fx-font-size: 34px;
+                              -fx-font-weight: bold;
+                              -fx-text-fill: #D86F9B;" />
+
+                <Label text="Beauty Appointment System"
+                       style="-fx-font-size: 13px;
+                              -fx-text-fill: #8A6F7B;" />
+
+                <Separator />
+
+                <Button text="🏠 Dashboard"
+                        prefWidth="190"
+                        prefHeight="50"
+                        style="-fx-background-color: #FCE4EC;
+                               -fx-text-fill: #D86F9B;
+                               -fx-font-size: 15px;
+                               -fx-font-weight: bold;
+                               -fx-background-radius: 18;" />
+
+                <Button text="📅 Appointments"
+                        prefWidth="190"
+                        prefHeight="50"
+                        style="-fx-background-color: transparent;
+                               -fx-font-size: 15px;
+                               -fx-alignment: CENTER-LEFT;" />
+
+                <Button text="💄 Services"
+                        prefWidth="190"
+                        prefHeight="50"
+                        style="-fx-background-color: transparent;
+                               -fx-font-size: 15px;
+                               -fx-alignment: CENTER-LEFT;" />
+
+                <Button text="💖 Favorites"
+                        prefWidth="190"
+                        prefHeight="50"
+                        style="-fx-background-color: transparent;
+                               -fx-font-size: 15px;
+                               -fx-alignment: CENTER-LEFT;" />
+
+                <Button text="👤 Profile"
+                        prefWidth="190"
+                        prefHeight="50"
+                        style="-fx-background-color: transparent;
+                               -fx-font-size: 15px;
+                               -fx-alignment: CENTER-LEFT;" />
+
+                <Region VBox.vgrow="ALWAYS"/>
+
+                <Button text="Logout"
+                        prefWidth="190"
+                        prefHeight="50"
+                        style="-fx-background-color: #E8A0BF;
+                               -fx-text-fill: white;
+                               -fx-font-size: 15px;
+                               -fx-font-weight: bold;
+                               -fx-background-radius: 18;" />
+
+            </children>
+
+        </VBox>
+
+        <!-- MAIN CONTENT -->
+
+        <VBox spacing="35"
+              AnchorPane.topAnchor="35"
+              AnchorPane.leftAnchor="290"
+              AnchorPane.rightAnchor="35"
+              AnchorPane.bottomAnchor="35">
+
+            <children>
+
+                <!-- HEADER -->
+
+                <HBox alignment="CENTER_LEFT">
+
+                    <children>
+
+                        <VBox spacing="8">
+
+                            <children>
+
+                                <Label text="Welcome To Glammy ✨"
+                                       style="-fx-font-size: 40px;
+                                              -fx-font-weight: bold;
+                                              -fx-text-fill: #D86F9B;" />
+
+                                <Label text="Choose your favorite beauty service and enjoy your luxury experience."
+                                       style="-fx-font-size: 15px;
+                                              -fx-text-fill: #8A6F7B;" />
+
+                            </children>
+
+                        </VBox>
+
+                        <Region HBox.hgrow="ALWAYS"/>
+
+                        <TextField promptText="Search services..."
+                                   prefWidth="230"
+                                   prefHeight="42"
+                                   style="-fx-background-radius: 15;
+                                          -fx-padding: 10;" />
+
+                    </children>
+
+                </HBox>
+
+                <!-- SERVICES CARDS -->
+
+                <FlowPane hgap="25"
+                          vgap="25">
+
+                    <children>
+
+                        <!-- CARD 1 -->
+
+                        <VBox alignment="CENTER"
+                              spacing="15"
+                              prefWidth="250"
+                              prefHeight="300"
+                              style="-fx-background-color: white;
+                                     -fx-background-radius: 30;
+                                     -fx-padding: 25;">
+
+                            <children>
+
+                                <Label text="💅"
+                                       style="-fx-font-size: 60px;" />
+
+                                <Label text="Book Appointment"
+                                       style="-fx-font-size: 22px;
+                                              -fx-font-weight: bold;
+                                              -fx-text-fill: #D86F9B;" />
+
+                                <Label text="Reserve your beauty session quickly and easily."
+                                       wrapText="true"
+                                       maxWidth="190"
+                                       style="-fx-font-size: 14px;
+                                              -fx-text-fill: #8A6F7B;
+                                              -fx-alignment: center;" />
+
+                                <Button text="Open"
+                                        prefWidth="150"
+                                        prefHeight="45"
+                                        style="-fx-background-color: #E8A0BF;
+                                               -fx-text-fill: white;
+                                               -fx-font-size: 15px;
+                                               -fx-font-weight: bold;
+                                               -fx-background-radius: 16;" />
+
+                            </children>
+
+                        </VBox>
+
+                        <!-- CARD 2 -->
+
+                        <VBox alignment="CENTER"
+                              spacing="15"
+                              prefWidth="250"
+                              prefHeight="300"
+                              style="-fx-background-color: white;
+                                     -fx-background-radius: 30;
+                                     -fx-padding: 25;">
+
+                            <children>
+
+                                <Label text="💄"
+                                       style="-fx-font-size: 60px;" />
+
+                                <Label text="Beauty Tips"
+                                       style="-fx-font-size: 22px;
+                                              -fx-font-weight: bold;
+                                              -fx-text-fill: #D86F9B;" />
+
+                                <Label text="Explore beauty secrets and skincare recommendations."
+                                       wrapText="true"
+                                       maxWidth="190"
+                                       style="-fx-font-size: 14px;
+                                              -fx-text-fill: #8A6F7B;
+                                              -fx-alignment: center;" />
+
+                                <Button text="Explore"
+                                        prefWidth="150"
+                                        prefHeight="45"
+                                        style="-fx-background-color: #FFD6E7;
+                                               -fx-text-fill: #D86F9B;
+                                               -fx-font-size: 15px;
+                                               -fx-font-weight: bold;
+                                               -fx-background-radius: 16;" />
+
+                            </children>
+
+                        </VBox>
+
+                        <!-- CARD 3 -->
+
+                        <VBox alignment="CENTER"
+                              spacing="15"
+                              prefWidth="250"
+                              prefHeight="300"
+                              style="-fx-background-color: white;
+                                     -fx-background-radius: 30;
+                                     -fx-padding: 25;">
+
+                            <children>
+
+                                <Label text="💇"
+                                       style="-fx-font-size: 60px;" />
+
+                                <Label text="Services"
+                                       style="-fx-font-size: 22px;
+                                              -fx-font-weight: bold;
+                                              -fx-text-fill: #D86F9B;" />
+
+                                <Label text="Discover premium salon and beauty services."
+                                       wrapText="true"
+                                       maxWidth="190"
+                                       style="-fx-font-size: 14px;
+                                              -fx-text-fill: #8A6F7B;
+                                              -fx-alignment: center;" />
+
+                                <Button text="View"
+                                        prefWidth="150"
+                                        prefHeight="45"
+                                        style="-fx-background-color: #E8A0BF;
+                                               -fx-text-fill: white;
+                                               -fx-font-size: 15px;
+                                               -fx-font-weight: bold;
+                                               -fx-background-radius: 16;" />
+
+                            </children>
+
+                        </VBox>
+
+                    </children>
+
+                </FlowPane>
+
+            </children>
+
+            <padding>
+                <Insets top="10"/>
+            </padding>
+
+        </VBox>
+
+    </children>
+
+</AnchorPane>

@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="750.0"
+            prefWidth="1300.0"
+            xmlns="http://javafx.com/javafx/21"
+            xmlns:fx="http://javafx.com/fxml/1"
+            style="-fx-background-color: linear-gradient(to bottom right, #FFF5F7, #FDEBF2);">
+
+    <children>
+
+        <!-- SIDEBAR -->
+
+        <VBox prefWidth="250"
+              spacing="25"
+              style="-fx-background-color: white;
+                     -fx-padding: 30;
+                     -fx-background-radius: 0 30 30 0;"
+
+              AnchorPane.topAnchor="0"
+              AnchorPane.bottomAnchor="0"
+              AnchorPane.leftAnchor="0">
+
+            <children>
+
+                <Label text="GLAMMY ✨"
+                       style="-fx-font-size: 34px;
+                              -fx-font-weight: bold;
+                              -fx-text-fill: #D86F9B;" />
+
+                <Label text="Beauty Appointment System"
+                       style="-fx-font-size: 13px;
+                              -fx-text-fill: #8A6F7B;" />
+
+                <Separator />
+
+                <Button text="🏠 Dashboard"
+                        prefWidth="190"
+                        prefHeight="50"
+                        style="-fx-background-color: #FCE4EC;
+                               -fx-text-fill: #D86F9B;
+                               -fx-font-size: 15px;
+                               -fx-font-weight: bold;
+                               -fx-background-radius: 18;" />
+
+                <Button text="📅 Appointments"
+                        prefWidth="190"
+                        prefHeight="50"
+                        style="-fx-background-color: transparent;
+                               -fx-font-size: 15px;
+                               -fx-alignment: CENTER-LEFT;" />
+
+                <Button text="💄 Services"
+                        prefWidth="190"
+                        prefHeight="50"
+                        style="-fx-background-color: transparent;
+                               -fx-font-size: 15px;
+                               -fx-alignment: CENTER-LEFT;" />
+
+                <Button text="💖 Favorites"
+                        prefWidth="190"
+                        prefHeight="50"
+                        style="-fx-background-color: transparent;
+                               -fx-font-size: 15px;
+                               -fx-alignment: CENTER-LEFT;" />
+
+                <Button text="👤 Profile"
+                        prefWidth="190"
+                        prefHeight="50"
+                        style="-fx-background-color: transparent;
+                               -fx-font-size: 15px;
+                               -fx-alignment: CENTER-LEFT;" />
+
+                <Region VBox.vgrow="ALWAYS"/>
+
+                <Button text="Logout"
+                        prefWidth="190"
+                        prefHeight="50"
+                        style="-fx-background-color: #E8A0BF;
+                               -fx-text-fill: white;
+                               -fx-font-size: 15px;
+                               -fx-font-weight: bold;
+                               -fx-background-radius: 18;" />
+
+            </children>
+
+        </VBox>
+
+        <!-- MAIN CONTENT -->
+
+        <VBox spacing="30"
+              AnchorPane.topAnchor="30"
+              AnchorPane.leftAnchor="290"
+              AnchorPane.rightAnchor="35"
+              AnchorPane.bottomAnchor="30">
+
+            <children>
+
+                <!-- TOP HEADER -->
+
+                <HBox alignment="CENTER_LEFT">
+
+                    <children>
+
+                        <VBox spacing="8">
+
+                            <children>
+
+                                <Label text="Welcome Back, Hana 💅"
+                                       style="-fx-font-size: 40px;
+                                              -fx-font-weight: bold;
+                                              -fx-text-fill: #D86F9B;" />
+
+                                <Label text="Manage your beauty appointments easily and elegantly."
+                                       style="-fx-font-size: 15px;
+                                              -fx-text-fill: #8A6F7B;" />
+
+                            </children>
+
+                        </VBox>
+
+                        <Region HBox.hgrow="ALWAYS"/>
+
+                        <TextField promptText="Search..."
+                                   prefWidth="220"
+                                   prefHeight="42"
+                                   style="-fx-background-radius: 15;
+                                          -fx-padding: 10;" />
+
+                    </children>
+
+                </HBox>
+
+                <!-- STATS -->
+
+                <HBox spacing="25">
+
+                    <children>
+
+                        <VBox alignment="CENTER"
+                              spacing="10"
+                              prefWidth="240"
+                              prefHeight="130"
+                              style="-fx-background-color: white;
+                                     -fx-background-radius: 28;">
+
+                            <children>
+
+                                <Label text="12"
+                                       style="-fx-font-size: 38px;
+                                              -fx-font-weight: bold;
+                                              -fx-text-fill: #D86F9B;" />
+
+                                <Label text="Appointments"
+                                       style="-fx-font-size: 15px;" />
+
+                            </children>
+
+                        </VBox>
+
+                        <VBox alignment="CENTER"
+                              spacing="10"
+                              prefWidth="240"
+                              prefHeight="130"
+                              style="-fx-background-color: white;
+                                     -fx-background-radius: 28;">
+
+                            <children>
+
+                                <Label text="5"
+                                       style="-fx-font-size: 38px;
+                                              -fx-font-weight: bold;
+                                              -fx-text-fill: #E8A0BF;" />
+
+                                <Label text="Upcoming"
+                                       style="-fx-font-size: 15px;" />
+
+                            </children>
+
+                        </VBox>
+
+                        <VBox alignment="CENTER"
+                              spacing="10"
+                              prefWidth="240"
+                              prefHeight="130"
+                              style="-fx-background-color: white;
+                                     -fx-background-radius: 28;">
+
+                            <children>
+
+                                <Label text="7"
+                                       style="-fx-font-size: 38px;
+                                              -fx-font-weight: bold;
+                                              -fx-text-fill: #F28B82;" />
+
+                                <Label text="Completed"
+                                       style="-fx-font-size: 15px;" />
+
+                            </children>
+
+                        </VBox>
+
+                    </children>
+
+                </HBox>
+
+                <!-- TABLE CARD -->
+
+                <VBox spacing="20"
+                      style="-fx-background-color: white;
+                             -fx-background-radius: 30;
+                             -fx-padding: 25;">
+
+                    <children>
+
+                        <HBox alignment="CENTER_LEFT">
+
+                            <children>
+
+                                <Label text="Appointments List"
+                                       style="-fx-font-size: 25px;
+                                              -fx-font-weight: bold;" />
+
+                                <Region HBox.hgrow="ALWAYS"/>
+
+                                <Button text="+ New Appointment"
+                                        prefWidth="220"
+                                        prefHeight="45"
+                                        style="-fx-background-color: #E8A0BF;
+                                               -fx-text-fill: white;
+                                               -fx-font-size: 14px;
+                                               -fx-font-weight: bold;
+                                               -fx-background-radius: 16;" />
+
+                            </children>
+
+                        </HBox>
+
+                        <TableView prefHeight="350"
+                                   style="-fx-background-radius: 20;">
+
+                            <columns>
+
+                                <TableColumn text="Service"
+                                             prefWidth="180"/>
+
+                                <TableColumn text="Specialist"
+                                             prefWidth="180"/>
+
+                                <TableColumn text="Date"
+                                             prefWidth="180"/>
+
+                                <TableColumn text="Time"
+                                             prefWidth="180"/>
+
+                                <TableColumn text="Status"
+                                             prefWidth="180"/>
+
+                            </columns>
+
+                        </TableView>
+
+                    </children>
+
+                </VBox>
+
+            </children>
+
+            <padding>
+                <Insets top="10"/>
+            </padding>
+
+        </VBox>
+
+    </children>
+
+</AnchorPane>
