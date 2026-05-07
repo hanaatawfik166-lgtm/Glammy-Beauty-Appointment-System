@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0"
+            xmlns="http://javafx.com/javafx/21"
+            xmlns:fx="http://javafx.com/fxml/1"
+            style="-fx-background-color: #FFF5F7;">
+
+    <children>
+
+        <VBox layoutX="300" layoutY="140"
+              spacing="20"
+              alignment="CENTER">
+
+            <padding>
+                <Insets top="20" right="20" bottom="20" left="20"/>
+            </padding>
+
+            <Label text="Welcome to Glammy ✨"
+                   style="-fx-font-size: 28px;
+                          -fx-font-weight: bold;
+                          -fx-text-fill: #D86F9B;" />
+
+            <TextField promptText="Enter your email"
+                       prefWidth="250"
+                       prefHeight="40" />
+
+            <PasswordField promptText="Enter your password"
+                           prefWidth="250"
+                           prefHeight="40" />
+
+            <Button text="Login"
+                    prefWidth="200"
+                    prefHeight="40"
+                    style="-fx-background-color: #E8A0BF;
+                           -fx-text-fill: white;" />
+
+            <Button text="Register"
+                    prefWidth="200"
+                    prefHeight="40" />
+
+        </VBox>
+
+    </children>
+
+</AnchorPane>
