@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.Circle?>
+
+<AnchorPane prefHeight="950.0" prefWidth="1600.0"
+            xmlns="http://javafx.com/javafx/21"
+            xmlns:fx="http://javafx.com/fxml/1"
+            style="-fx-background-color: linear-gradient(to bottom right, #FFF5F7, #FFE3EC, #FFD6E7);">
+
+    <children>
+
+        <!-- BACKGROUND -->
+        <Circle centerX="180" centerY="120"
+                radius="150"
+                fill="#FFD6E7"
+                opacity="0.28"/>
+
+        <Circle centerX="1450" centerY="180"
+                radius="170"
+                fill="#FFC9DD"
+                opacity="0.20"/>
+
+        <!-- NOTEBOOK -->
+        <StackPane AnchorPane.topAnchor="40.0"
+                   AnchorPane.bottomAnchor="40.0"
+                   AnchorPane.leftAnchor="120.0"
+                   AnchorPane.rightAnchor="120.0">
+
+            <!-- NOTEBOOK BODY -->
+            <VBox maxWidth="1200"
+                  style="-fx-background-color: #FFFDFE;
+                         -fx-background-radius: 40;
+                         -fx-border-radius: 40;
+                         -fx-border-color: #F7C8D8;
+                         -fx-border-width: 2;">
+
+                <effect>
+                    <DropShadow radius="30"
+                                spread="0.04"
+                                offsetY="8"
+                                color="#E8B7C9"/>
+                </effect>
+
+                <!-- HEADER -->
+                <HBox alignment="CENTER_LEFT"
+                      spacing="15"
+                      prefHeight="95"
+                      style="-fx-background-color: linear-gradient(to right,#F7A8C0,#E88DB2);
+                             -fx-background-radius: 40 40 0 0;">
+
+                    <padding>
+                        <Insets top="20" right="35" bottom="20" left="35"/>
+                    </padding>
+
+                    <!-- HOME BUTTON -->
+                    <Button text="🏠 Home"
+                            prefWidth="130"
+                            prefHeight="42"
+                            style="-fx-background-color: white;
+                                   -fx-text-fill: #D86F9B;
+                                   -fx-font-size: 15px;
+                                   -fx-font-weight: bold;
+                                   -fx-background-radius: 22;
+                                   -fx-cursor: hand;
+                                   -fx-border-color: #FFD1DC;
+                                   -fx-border-radius: 22;" />
+
+                    <Label text="📖"
+                           style="-fx-font-size: 45px;" />
+
+                    <VBox spacing="4">
+
+                        <Label text="Glammy Beauty Services"
+                               style="-fx-font-size: 34px;
+                                      -fx-font-weight: bold;
+                                      -fx-text-fill: white;" />
+
+                        <Label text="Your favorite beauty notebook ✨"
+                               style="-fx-font-size: 14px;
+                                      -fx-text-fill: #FFF5F7;" />
+
+                    </VBox>
+
+                </HBox>
+
+                <!-- CONTENT -->
+                <ScrollPane fitToWidth="true"
+                            style="-fx-background-color: transparent;
+                                   -fx-background: transparent;">
+
+                    <content>
+
+                        <VBox spacing="20"
+                              style="-fx-background-color: #FFFDFE;">
+
+                            <padding>
+                                <Insets top="30" right="40" bottom="30" left="40"/>
+                            </padding>
+
+                            <!-- SERVICE -->
+                            <HBox spacing="25"
+                                  alignment="CENTER_LEFT"
+                                  prefHeight="110"
+                                  style="-fx-background-color: white;
+                                         -fx-background-radius: 25;
+                                         -fx-border-radius: 25;
+                                         -fx-border-color: #FFD6E7;">
+
+                                <padding>
+                                    <Insets top="20" right="25" bottom="20" left="25"/>
+                                </padding>
+
+                                <Label text="💇‍♀️"
+                                       style="-fx-font-size: 55px;" />
+
+                                <VBox spacing="6">
+
+                                    <Label text="Hair Styling"
+                                           style="-fx-font-size: 24px;
+                                                  -fx-font-weight: bold;
+                                                  -fx-text-fill: #D95D92;" />
+
+                                    <Label text="Elegant hairstyles and trendy looks ✨"
+                                           style="-fx-font-size: 14px;
+                                                  -fx-text-fill: #9A7584;" />
+
+                                </VBox>
+
+                                <Region HBox.hgrow="ALWAYS"/>
+
+                                <Button text="Book"
+                                        prefWidth="130"
+                                        prefHeight="40"
+                                        style="-fx-background-color: linear-gradient(to right,#F7A8C0,#E88DB2);
+                                               -fx-text-fill: white;
+                                               -fx-font-size: 14px;
+                                               -fx-font-weight: bold;
+                                               -fx-background-radius: 20;" />
+
+                            </HBox>
+
+                            <!-- SERVICE -->
+                            <HBox spacing="25"
+                                  alignment="CENTER_LEFT"
+                                  prefHeight="110"
+                                  style="-fx-background-color: white;
+                                         -fx-background-radius: 25;
+                                         -fx-border-radius: 25;
+                                         -fx-border-color: #FFD6E7;">
+
+                                <padding>
+                                    <Insets top="20" right="25" bottom="20" left="25"/>
+                                </padding>
+
+                                <Label text="💅"
+                                       style="-fx-font-size: 55px;" />
+
+                                <VBox spacing="6">
+
+                                    <Label text="Nail Care"
+                                           style="-fx-font-size: 24px;
+                                                  -fx-font-weight: bold;
+                                                  -fx-text-fill: #D95D92;" />
+
+                                    <Label text="Luxury manicure and nail art 💖"
+                                           style="-fx-font-size: 14px;
+                                                  -fx-text-fill: #9A7584;" />
+
+                                </VBox>
+
+                                <Region HBox.hgrow="ALWAYS"/>
+
+                                <Button text="Book"
+                                        prefWidth="130"
+                                        prefHeight="40"
+                                        style="-fx-background-color: linear-gradient(to right,#F7A8C0,#E88DB2);
+                                               -fx-text-fill: white;
+                                               -fx-font-size: 14px;
+                                               -fx-font-weight: bold;
+                                               -fx-background-radius: 20;" />
+
+                            </HBox>
+
+                            <!-- SERVICE -->
+                            <HBox spacing="25"
+                                  alignment="CENTER_LEFT"
+                                  prefHeight="110"
+                                  style="-fx-background-color: white;
+                                         -fx-background-radius: 25;
+                                         -fx-border-radius: 25;
+                                         -fx-border-color: #FFD6E7;">
+
+                                <padding>
+                                    <Insets top="20" right="25" bottom="20" left="25"/>
+                                </padding>
+
+                                <Label text="💄"
+                                       style="-fx-font-size: 55px;" />
+
+                                <VBox spacing="6">
+
+                                    <Label text="Makeup"
+                                           style="-fx-font-size: 24px;
+                                                  -fx-font-weight: bold;
+                                                  -fx-text-fill: #D95D92;" />
+
+                                    <Label text="Professional glam makeup 🌸"
+                                           style="-fx-font-size: 14px;
+                                                  -fx-text-fill: #9A7584;" />
+
+                                </VBox>
+
+                                <Region HBox.hgrow="ALWAYS"/>
+
+                                <Button text="Book"
+                                        prefWidth="130"
+                                        prefHeight="40"
+                                        style="-fx-background-color: linear-gradient(to right,#F7A8C0,#E88DB2);
+                                               -fx-text-fill: white;
+                                               -fx-font-size: 14px;
+                                               -fx-font-weight: bold;
+                                               -fx-background-radius: 20;" />
+
+                            </HBox>
+
+                            <!-- SERVICE -->
+                            <HBox spacing="25"
+                                  alignment="CENTER_LEFT"
+                                  prefHeight="110"
+                                  style="-fx-background-color: white;
+                                         -fx-background-radius: 25;
+                                         -fx-border-radius: 25;
+                                         -fx-border-color: #FFD6E7;">
+
+                                <padding>
+                                    <Insets top="20" right="25" bottom="20" left="25"/>
+                                </padding>
+
+                                <Label text="🧖‍♀️"
+                                       style="-fx-font-size: 55px;" />
+
+                                <VBox spacing="6">
+
+                                    <Label text="Facial"
+                                           style="-fx-font-size: 24px;
+                                                  -fx-font-weight: bold;
+                                                  -fx-text-fill: #D95D92;" />
+
+                                    <Label text="Fresh glowing skin treatments ✨"
+                                           style="-fx-font-size: 14px;
+                                                  -fx-text-fill: #9A7584;" />
+
+                                </VBox>
+
+                                <Region HBox.hgrow="ALWAYS"/>
+
+                                <Button text="Book"
+                                        prefWidth="130"
+                                        prefHeight="40"
+                                        style="-fx-background-color: linear-gradient(to right,#F7A8C0,#E88DB2);
+                                               -fx-text-fill: white;
+                                               -fx-font-size: 14px;
+                                               -fx-font-weight: bold;
+                                               -fx-background-radius: 20;" />
+
+                            </HBox>
+
+                            <!-- SERVICE -->
+                            <HBox spacing="25"
+                                  alignment="CENTER_LEFT"
+                                  prefHeight="110"
+                                  style="-fx-background-color: white;
+                                         -fx-background-radius: 25;
+                                         -fx-border-radius: 25;
+                                         -fx-border-color: #FFD6E7;">
+
+                                <padding>
+                                    <Insets top="20" right="25" bottom="20" left="25"/>
+                                </padding>
+
+                                <Label text="👁"
+                                       style="-fx-font-size: 55px;" />
+
+                                <VBox spacing="6">
+
+                                    <Label text="Lashes"
+                                           style="-fx-font-size: 24px;
+                                                  -fx-font-weight: bold;
+                                                  -fx-text-fill: #D95D92;" />
+
+                                    <Label text="Luxury lashes and extensions 💕"
+                                           style="-fx-font-size: 14px;
+                                                  -fx-text-fill: #9A7584;" />
+
+                                </VBox>
+
+                                <Region HBox.hgrow="ALWAYS"/>
+
+                                <Button text="Book"
+                                        prefWidth="130"
+                                        prefHeight="40"
+                                        style="-fx-background-color: linear-gradient(to right,#F7A8C0,#E88DB2);
+                                               -fx-text-fill: white;
+                                               -fx-font-size: 14px;
+                                               -fx-font-weight: bold;
+                                               -fx-background-radius: 20;" />
+
+                            </HBox>
+
+                        </VBox>
+
+                    </content>
+
+                </ScrollPane>
+
+            </VBox>
+
+        </StackPane>
+
+    </children>
+
+</AnchorPane>

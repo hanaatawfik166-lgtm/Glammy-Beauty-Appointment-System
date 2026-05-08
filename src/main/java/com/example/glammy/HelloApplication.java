@@ -12,9 +12,7 @@ public class HelloApplication extends Application {
 
         FXMLLoader fxmlLoader =
 
-                new FXMLLoader(getClass().getResource("/appointments.fxml"));
-
-        new FXMLLoader(getClass().getResource("/register.fxml"));
+                new FXMLLoader(getClass().getResource("/service.fxml"));
 
 
         Scene scene = new Scene(fxmlLoader.load(), 900, 600);
