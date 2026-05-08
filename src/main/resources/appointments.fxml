@@ -3,22 +3,586 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
 
 <AnchorPane prefHeight="750.0"
             prefWidth="1300.0"
             xmlns="http://javafx.com/javafx/21"
             xmlns:fx="http://javafx.com/fxml/1"
-            style="-fx-background-color: linear-gradient(to bottom right, #FFF5F7, #FDEBF2);">
+
+            style="-fx-background-color:
+                   linear-gradient(to bottom right,
+                   #FFF7FB,
+                   #FFEAF4,
+                   #FFF0F7);">
 
     <children>
+
+        <!-- BACKGROUND GLOW -->
+
+
+
+
+        <!-- RANDOM CALENDAR SHAPES -->
+
+        <VBox layoutX="620"
+              layoutY="40"
+              opacity="0.07"
+              rotate="-20"
+              spacing="0">
+
+            <children>
+
+                <Rectangle width="65"
+                           height="15"
+                           arcWidth="10"
+                           arcHeight="10"
+                           fill="#F2AFCB"/>
+
+                <Rectangle width="65"
+                           height="58"
+                           arcWidth="12"
+                           arcHeight="12"
+                           fill="white"
+                           stroke="#F7D4E3"/>
+
+            </children>
+
+        </VBox>
+
+        <VBox layoutX="1020"
+              layoutY="60"
+              opacity="0.06"
+              rotate="15"
+              spacing="0">
+
+            <children>
+
+                <Rectangle width="55"
+                           height="13"
+                           arcWidth="10"
+                           arcHeight="10"
+                           fill="#E8A0BF"/>
+
+                <Rectangle width="55"
+                           height="50"
+                           arcWidth="12"
+                           arcHeight="12"
+                           fill="white"
+                           stroke="#F5D3E1"/>
+
+            </children>
+
+        </VBox>
+
+        <VBox layoutX="850"
+              layoutY="190"
+              opacity="0.05"
+              rotate="-10"
+              spacing="0">
+
+            <children>
+
+                <Rectangle width="70"
+                           height="16"
+                           arcWidth="10"
+                           arcHeight="10"
+                           fill="#F4BDD3"/>
+
+                <Rectangle width="70"
+                           height="62"
+                           arcWidth="12"
+                           arcHeight="12"
+                           fill="white"
+                           stroke="#F7D4E3"/>
+
+            </children>
+
+        </VBox>
+
+        <VBox layoutX="1180"
+              layoutY="250"
+              opacity="0.07"
+              rotate="20"
+              spacing="0">
+
+            <children>
+
+                <Rectangle width="58"
+                           height="14"
+                           arcWidth="10"
+                           arcHeight="10"
+                           fill="#E8A0BF"/>
+
+                <Rectangle width="58"
+                           height="52"
+                           arcWidth="12"
+                           arcHeight="12"
+                           fill="white"
+                           stroke="#F5D3E1"/>
+
+            </children>
+
+        </VBox>
+
+        <VBox layoutX="700"
+              layoutY="340"
+              opacity="0.06"
+              rotate="18"
+              spacing="0">
+
+            <children>
+
+                <Rectangle width="62"
+                           height="14"
+                           arcWidth="10"
+                           arcHeight="10"
+                           fill="#F2AFCB"/>
+
+                <Rectangle width="62"
+                           height="55"
+                           arcWidth="12"
+                           arcHeight="12"
+                           fill="white"
+                           stroke="#F7D4E3"/>
+
+            </children>
+
+        </VBox>
+
+        <VBox layoutX="980"
+              layoutY="420"
+              opacity="0.05"
+              rotate="-25"
+              spacing="0">
+
+            <children>
+
+                <Rectangle width="72"
+                           height="16"
+                           arcWidth="10"
+                           arcHeight="10"
+                           fill="#E8A0BF"/>
+
+                <Rectangle width="72"
+                           height="63"
+                           arcWidth="12"
+                           arcHeight="12"
+                           fill="white"
+                           stroke="#F5D3E1"/>
+
+            </children>
+
+        </VBox>
+
+        <VBox layoutX="1240"
+              layoutY="500"
+              opacity="0.06"
+              rotate="12"
+              spacing="0">
+
+            <children>
+
+                <Rectangle width="52"
+                           height="12"
+                           arcWidth="10"
+                           arcHeight="10"
+                           fill="#F4BDD3"/>
+
+                <Rectangle width="52"
+                           height="46"
+                           arcWidth="12"
+                           arcHeight="12"
+                           fill="white"
+                           stroke="#F7D4E3"/>
+
+            </children>
+
+        </VBox>
+
+        <VBox layoutX="780"
+              layoutY="590"
+              opacity="0.05"
+              rotate="-18"
+              spacing="0">
+
+            <children>
+
+                <Rectangle width="60"
+                           height="14"
+                           arcWidth="10"
+                           arcHeight="10"
+                           fill="#E8A0BF"/>
+
+                <Rectangle width="60"
+                           height="53"
+                           arcWidth="12"
+                           arcHeight="12"
+                           fill="white"
+                           stroke="#F5D3E1"/>
+
+            </children>
+
+        </VBox>
+
+        <VBox layoutX="1080"
+              layoutY="640"
+              opacity="0.07"
+              rotate="22"
+              spacing="0">
+
+            <children>
+
+                <Rectangle width="68"
+                           height="15"
+                           arcWidth="10"
+                           arcHeight="10"
+                           fill="#F2AFCB"/>
+
+                <Rectangle width="68"
+                           height="60"
+                           arcWidth="12"
+                           arcHeight="12"
+                           fill="white"
+                           stroke="#F7D4E3"/>
+
+            </children>
+
+        </VBox>
+
+
+
+
+        <!-- RANDOM CALENDAR SHAPES -->
+
+        <VBox layoutX="930"
+              layoutY="70"
+              opacity="0.10"
+              rotate="18"
+              spacing="0">
+
+            <children>
+
+                <Rectangle width="70"
+                           height="16"
+                           arcWidth="10"
+                           arcHeight="10"
+                           fill="#F2AFCB"/>
+
+                <Rectangle width="70"
+                           height="60"
+                           arcWidth="12"
+                           arcHeight="12"
+                           fill="white"
+                           stroke="#F7D4E3"/>
+
+            </children>
+
+        </VBox>
+
+        <VBox layoutX="1130"
+              layoutY="170"
+              opacity="0.07"
+              rotate="-15"
+              spacing="0">
+
+            <children>
+
+                <Rectangle width="58"
+                           height="14"
+                           arcWidth="10"
+                           arcHeight="10"
+                           fill="#E8A0BF"/>
+
+                <Rectangle width="58"
+                           height="52"
+                           arcWidth="12"
+                           arcHeight="12"
+                           fill="white"
+                           stroke="#F5D3E1"/>
+
+            </children>
+
+        </VBox>
+
+        <VBox layoutX="820"
+              layoutY="240"
+              opacity="0.08"
+              rotate="20"
+              spacing="0">
+
+            <children>
+
+                <Rectangle width="65"
+                           height="15"
+                           arcWidth="10"
+                           arcHeight="10"
+                           fill="#F4BDD3"/>
+
+                <Rectangle width="65"
+                           height="56"
+                           arcWidth="12"
+                           arcHeight="12"
+                           fill="white"
+                           stroke="#F7D4E3"/>
+
+            </children>
+
+        </VBox>
+
+        <VBox layoutX="1050"
+              layoutY="330"
+              opacity="0.09"
+              rotate="-22"
+              spacing="0">
+
+            <children>
+
+                <Rectangle width="72"
+                           height="16"
+                           arcWidth="10"
+                           arcHeight="10"
+                           fill="#E8A0BF"/>
+
+                <Rectangle width="72"
+                           height="62"
+                           arcWidth="12"
+                           arcHeight="12"
+                           fill="white"
+                           stroke="#F5D3E1"/>
+
+            </children>
+
+        </VBox>
+
+        <VBox layoutX="740"
+              layoutY="420"
+              opacity="0.06"
+              rotate="14"
+              spacing="0">
+
+            <children>
+
+                <Rectangle width="55"
+                           height="13"
+                           arcWidth="10"
+                           arcHeight="10"
+                           fill="#F4BDD3"/>
+
+                <Rectangle width="55"
+                           height="48"
+                           arcWidth="12"
+                           arcHeight="12"
+                           fill="white"
+                           stroke="#F7D4E3"/>
+
+            </children>
+
+        </VBox>
+
+        <VBox layoutX="1160"
+              layoutY="500"
+              opacity="0.07"
+              rotate="10"
+              spacing="0">
+
+            <children>
+
+                <Rectangle width="60"
+                           height="14"
+                           arcWidth="10"
+                           arcHeight="10"
+                           fill="#E8A0BF"/>
+
+                <Rectangle width="60"
+                           height="54"
+                           arcWidth="12"
+                           arcHeight="12"
+                           fill="white"
+                           stroke="#F5D3E1"/>
+
+            </children>
+
+        </VBox>
+
+        <VBox layoutX="910"
+              layoutY="590"
+              opacity="0.08"
+              rotate="-18"
+              spacing="0">
+
+            <children>
+
+                <Rectangle width="68"
+                           height="16"
+                           arcWidth="10"
+                           arcHeight="10"
+                           fill="#F2AFCB"/>
+
+                <Rectangle width="68"
+                           height="58"
+                           arcWidth="12"
+                           arcHeight="12"
+                           fill="white"
+                           stroke="#F7D4E3"/>
+
+            </children>
+
+        </VBox>
+
+        <VBox layoutX="640"
+              layoutY="560"
+              opacity="0.05"
+              rotate="22"
+              spacing="0">
+
+            <children>
+
+                <Rectangle width="50"
+                           height="12"
+                           arcWidth="10"
+                           arcHeight="10"
+                           fill="#E8A0BF"/>
+
+                <Rectangle width="50"
+                           height="45"
+                           arcWidth="12"
+                           arcHeight="12"
+                           fill="white"
+                           stroke="#F5D3E1"/>
+
+            </children>
+
+        </VBox>
+
+
+        <Circle radius="170"
+                layoutX="1180"
+                layoutY="90"
+                opacity="0.10"
+                fill="#FFB6D5"/>
+
+        <Circle radius="110"
+                layoutX="980"
+                layoutY="640"
+                opacity="0.08"
+                fill="#FFD6E7"/>
+
+        <Circle radius="70"
+                layoutX="760"
+                layoutY="120"
+                opacity="0.06"
+                fill="#FFC5DE"/>
+
+        <!-- APPOINTMENT DECOR -->
+
+        <!-- Calendar -->
+
+        <VBox layoutX="1050"
+              layoutY="120"
+              opacity="0.12"
+              rotate="15"
+              spacing="0">
+
+            <children>
+
+                <Rectangle width="70"
+                           height="18"
+                           arcWidth="10"
+                           arcHeight="10"
+                           fill="#E8A0BF"/>
+
+                <Rectangle width="70"
+                           height="65"
+                           arcWidth="12"
+                           arcHeight="12"
+                           fill="white"
+                           stroke="#F5C5D8"/>
+
+            </children>
+
+        </VBox>
+
+        <!-- Clock -->
+
+        <Circle radius="40"
+                layoutX="1110"
+                layoutY="500"
+                opacity="0.10"
+                fill="white"
+                stroke="#E8A0BF"
+                strokeWidth="4"/>
+
+        <Label text="🕒"
+               layoutX="1088"
+               layoutY="476"
+
+               style="-fx-font-size: 42px;
+                      -fx-opacity: 0.12;" />
+
+        <!-- Sparkles -->
+
+        <Label text="✦"
+               layoutX="940"
+               layoutY="180"
+
+               style="-fx-font-size: 26px;
+                      -fx-text-fill: #FFC3DB;
+                      -fx-opacity: 0.35;" />
+
+        <Label text="✧"
+               layoutX="1220"
+               layoutY="350"
+
+               style="-fx-font-size: 24px;
+                      -fx-text-fill: #FFD7E7;
+                      -fx-opacity: 0.30;" />
+
+        <Label text="✦"
+               layoutX="870"
+               layoutY="610"
+
+               style="-fx-font-size: 22px;
+                      -fx-text-fill: #FFB6D5;
+                      -fx-opacity: 0.30;" />
+
+        <!-- Hearts -->
+
+        <Label text="💕"
+               layoutX="840"
+               layoutY="90"
+
+               style="-fx-font-size: 34px;
+                      -fx-opacity: 0.10;" />
+
+        <Label text="💕"
+               layoutX="1180"
+               layoutY="620"
+
+               style="-fx-font-size: 28px;
+                      -fx-opacity: 0.10;" />
 
         <!-- SIDEBAR -->
 
         <VBox prefWidth="250"
               spacing="25"
-              style="-fx-background-color: white;
+
+              style="-fx-background-color:
+                     linear-gradient(to bottom,
+                     rgba(255,255,255,0.96),
+                     rgba(255,245,249,0.93));
+
                      -fx-padding: 30;
-                     -fx-background-radius: 0 30 30 0;"
+                     -fx-background-radius: 0 35 35 0;
+
+                     -fx-effect:
+                     dropshadow(gaussian,
+                     rgba(232,160,191,0.22),
+                     25,
+                     0.2,
+                     0,
+                     6);"
 
               AnchorPane.topAnchor="0"
               AnchorPane.bottomAnchor="0"
@@ -26,10 +590,20 @@
 
             <children>
 
+                <!-- LOGO -->
+
                 <Label text="GLAMMY ✨"
-                       style="-fx-font-size: 34px;
+                       style="-fx-font-size: 36px;
                               -fx-font-weight: bold;
-                              -fx-text-fill: #D86F9B;" />
+                              -fx-text-fill: #D86F9B;
+
+                              -fx-effect:
+                              dropshadow(gaussian,
+                              #FFC5DA,
+                              18,
+                              0.7,
+                              0,
+                              0);" />
 
                 <Label text="Beauty Appointment System"
                        style="-fx-font-size: 13px;
@@ -37,41 +611,61 @@
 
                 <Separator />
 
+                <!-- MENU -->
+
                 <Button text="🏠 Dashboard"
                         prefWidth="190"
                         prefHeight="50"
-                        style="-fx-background-color: #FCE4EC;
+
+                        style="-fx-background-color:
+                               linear-gradient(to right,
+                               #FFD7E7,
+                               #FFE6F0);
+
                                -fx-text-fill: #D86F9B;
                                -fx-font-size: 15px;
                                -fx-font-weight: bold;
+
                                -fx-background-radius: 18;" />
 
                 <Button text="📅 Appointments"
                         prefWidth="190"
                         prefHeight="50"
+
                         style="-fx-background-color: transparent;
                                -fx-font-size: 15px;
+                               -fx-font-weight: bold;
+                               -fx-text-fill: #7E6973;
                                -fx-alignment: CENTER-LEFT;" />
 
                 <Button text="💄 Services"
                         prefWidth="190"
                         prefHeight="50"
+
                         style="-fx-background-color: transparent;
                                -fx-font-size: 15px;
+                               -fx-font-weight: bold;
+                               -fx-text-fill: #7E6973;
                                -fx-alignment: CENTER-LEFT;" />
 
                 <Button text="💖 Favorites"
                         prefWidth="190"
                         prefHeight="50"
+
                         style="-fx-background-color: transparent;
                                -fx-font-size: 15px;
+                               -fx-font-weight: bold;
+                               -fx-text-fill: #7E6973;
                                -fx-alignment: CENTER-LEFT;" />
 
                 <Button text="👤 Profile"
                         prefWidth="190"
                         prefHeight="50"
+
                         style="-fx-background-color: transparent;
                                -fx-font-size: 15px;
+                               -fx-font-weight: bold;
+                               -fx-text-fill: #7E6973;
                                -fx-alignment: CENTER-LEFT;" />
 
                 <Region VBox.vgrow="ALWAYS"/>
@@ -79,10 +673,16 @@
                 <Button text="Logout"
                         prefWidth="190"
                         prefHeight="50"
-                        style="-fx-background-color: #E8A0BF;
+
+                        style="-fx-background-color:
+                               linear-gradient(to right,
+                               #E8A0BF,
+                               #F5BDD3);
+
                                -fx-text-fill: white;
                                -fx-font-size: 15px;
                                -fx-font-weight: bold;
+
                                -fx-background-radius: 18;" />
 
             </children>
@@ -92,6 +692,7 @@
         <!-- MAIN CONTENT -->
 
         <VBox spacing="30"
+
               AnchorPane.topAnchor="30"
               AnchorPane.leftAnchor="290"
               AnchorPane.rightAnchor="35"
@@ -109,12 +710,22 @@
 
                             <children>
 
-                                <Label text="Welcome Back, Hana 💅"
-                                       style="-fx-font-size: 40px;
+                                <Label text="Welcome Back 💅"
+
+                                       style="-fx-font-size: 42px;
                                               -fx-font-weight: bold;
-                                              -fx-text-fill: #D86F9B;" />
+                                              -fx-text-fill: #D86F9B;
+
+                                              -fx-effect:
+                                              dropshadow(gaussian,
+                                              #FFC9DD,
+                                              18,
+                                              0.8,
+                                              0,
+                                              0);" />
 
                                 <Label text="Manage your beauty appointments easily and elegantly."
+
                                        style="-fx-font-size: 15px;
                                               -fx-text-fill: #8A6F7B;" />
 
@@ -124,10 +735,20 @@
 
                         <Region HBox.hgrow="ALWAYS"/>
 
+                        <!-- SEARCH -->
+
                         <TextField promptText="Search..."
-                                   prefWidth="220"
-                                   prefHeight="42"
-                                   style="-fx-background-radius: 15;
+                                   prefWidth="230"
+                                   prefHeight="44"
+
+                                   style="-fx-background-color: white;
+
+                                          -fx-background-radius: 16;
+                                          -fx-border-radius: 16;
+
+                                          -fx-border-color: #F4C9D9;
+                                          -fx-border-width: 1.5;
+
                                           -fx-padding: 10;" />
 
                     </children>
@@ -140,17 +761,31 @@
 
                     <children>
 
+                        <!-- CARD 1 -->
+
                         <VBox alignment="CENTER"
                               spacing="10"
                               prefWidth="240"
                               prefHeight="130"
-                              style="-fx-background-color: white;
-                                     -fx-background-radius: 28;">
+
+                              style="-fx-background-color:
+                                     rgba(255,255,255,0.96);
+
+                                     -fx-background-radius: 28;
+
+                                     -fx-effect:
+                                     dropshadow(gaussian,
+                                     rgba(232,160,191,0.18),
+                                     18,
+                                     0.2,
+                                     0,
+                                     5);">
 
                             <children>
 
                                 <Label text="12"
-                                       style="-fx-font-size: 38px;
+
+                                       style="-fx-font-size: 40px;
                                               -fx-font-weight: bold;
                                               -fx-text-fill: #D86F9B;" />
 
@@ -161,17 +796,31 @@
 
                         </VBox>
 
+                        <!-- CARD 2 -->
+
                         <VBox alignment="CENTER"
                               spacing="10"
                               prefWidth="240"
                               prefHeight="130"
-                              style="-fx-background-color: white;
-                                     -fx-background-radius: 28;">
+
+                              style="-fx-background-color:
+                                     rgba(255,255,255,0.96);
+
+                                     -fx-background-radius: 28;
+
+                                     -fx-effect:
+                                     dropshadow(gaussian,
+                                     rgba(232,160,191,0.18),
+                                     18,
+                                     0.2,
+                                     0,
+                                     5);">
 
                             <children>
 
                                 <Label text="5"
-                                       style="-fx-font-size: 38px;
+
+                                       style="-fx-font-size: 40px;
                                               -fx-font-weight: bold;
                                               -fx-text-fill: #E8A0BF;" />
 
@@ -182,17 +831,31 @@
 
                         </VBox>
 
+                        <!-- CARD 3 -->
+
                         <VBox alignment="CENTER"
                               spacing="10"
                               prefWidth="240"
                               prefHeight="130"
-                              style="-fx-background-color: white;
-                                     -fx-background-radius: 28;">
+
+                              style="-fx-background-color:
+                                     rgba(255,255,255,0.96);
+
+                                     -fx-background-radius: 28;
+
+                                     -fx-effect:
+                                     dropshadow(gaussian,
+                                     rgba(232,160,191,0.18),
+                                     18,
+                                     0.2,
+                                     0,
+                                     5);">
 
                             <children>
 
                                 <Label text="7"
-                                       style="-fx-font-size: 38px;
+
+                                       style="-fx-font-size: 40px;
                                               -fx-font-weight: bold;
                                               -fx-text-fill: #F28B82;" />
 
@@ -210,9 +873,21 @@
                 <!-- TABLE CARD -->
 
                 <VBox spacing="20"
-                      style="-fx-background-color: white;
+
+                      style="-fx-background-color:
+                             rgba(255,255,255,0.97);
+
                              -fx-background-radius: 30;
-                             -fx-padding: 25;">
+
+                             -fx-padding: 25;
+
+                             -fx-effect:
+                             dropshadow(gaussian,
+                             rgba(232,160,191,0.18),
+                             20,
+                             0.2,
+                             0,
+                             6);">
 
                     <children>
 
@@ -221,26 +896,39 @@
                             <children>
 
                                 <Label text="Appointments List"
-                                       style="-fx-font-size: 25px;
-                                              -fx-font-weight: bold;" />
+
+                                       style="-fx-font-size: 26px;
+                                              -fx-font-weight: bold;
+                                              -fx-text-fill: #D86F9B;" />
 
                                 <Region HBox.hgrow="ALWAYS"/>
 
                                 <Button text="+ New Appointment"
                                         prefWidth="220"
                                         prefHeight="45"
-                                        style="-fx-background-color: #E8A0BF;
+
+                                        style="-fx-background-color:
+                                               linear-gradient(to right,
+                                               #E8A0BF,
+                                               #F4BDD3);
+
                                                -fx-text-fill: white;
                                                -fx-font-size: 14px;
                                                -fx-font-weight: bold;
+
                                                -fx-background-radius: 16;" />
 
                             </children>
 
                         </HBox>
 
+                        <!-- TABLE -->
+
                         <TableView prefHeight="350"
-                                   style="-fx-background-radius: 20;">
+
+                                   style="-fx-background-radius: 20;
+                                          -fx-border-radius: 20;
+                                          -fx-border-color: #F5D3E1;">
 
                             <columns>
 

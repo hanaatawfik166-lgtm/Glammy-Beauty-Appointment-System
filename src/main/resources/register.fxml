@@ -6,7 +6,9 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.shape.Circle?>
 
-<AnchorPane prefHeight="950.0" prefWidth="1600.0"
+<AnchorPane
+        fx:controller="com.example.glammy.controller.RegisterController"
+        prefHeight="950.0" prefWidth="1600.0"
             xmlns="http://javafx.com/javafx/21"
             xmlns:fx="http://javafx.com/fxml/1"
             style="-fx-background-color: linear-gradient(to bottom right, #FFF7FB, #FFE8F1, #FFD8E8);">
@@ -181,9 +183,12 @@
                                   -fx-text-fill: #B57C94;" />
 
                     <Hyperlink text="Login"
-                               style="-fx-font-size: 14px;
-                                      -fx-font-weight: bold;
-                                      -fx-text-fill: #D95D92;" />
+                               onAction="#goToLogin"
+
+                               style="-fx-text-fill: #D86F9B;
+                  -fx-font-size: 14px;
+                  -fx-font-weight: bold;
+                  -fx-border-color: transparent;" />
 
                 </HBox>
 

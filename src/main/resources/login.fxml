@@ -1,48 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
 
-<AnchorPane prefHeight="750.0"
-            prefWidth="1300.0"
-            xmlns="http://javafx.com/javafx/21"
+<AnchorPane xmlns="http://javafx.com/javafx/21"
             xmlns:fx="http://javafx.com/fxml/1"
-            style="-fx-background-color: linear-gradient(to bottom right, #FFF5F7, #FDEBF2);">
+            fx:controller="com.example.glammy.controller.LoginController"
+
+            prefWidth="1300"
+            prefHeight="750"
+
+            style="-fx-background-color: linear-gradient(to bottom right, #FFF4F8, #FFEAF3, #FFFDFE);">
 
     <children>
+
+        <!-- Decorative Circles -->
+
+        <Circle radius="130"
+                layoutX="1180"
+                layoutY="90"
+                opacity="0.15"
+                fill="#FFB6D5"/>
+
+        <Circle radius="90"
+                layoutX="980"
+                layoutY="650"
+                opacity="0.12"
+                fill="#FFD0E5"/>
+
+        <Circle radius="55"
+                layoutX="760"
+                layoutY="120"
+                opacity="0.10"
+                fill="#FFC4DD"/>
 
         <!-- LEFT SIDE -->
 
         <VBox prefWidth="500"
               alignment="CENTER"
-              spacing="20"
-              style="-fx-background-color: linear-gradient(to bottom, #F8D7E3, #FCEEF5);
-                     -fx-background-radius: 0 40 40 0;"
+              spacing="24"
+
+              style="-fx-background-color: linear-gradient(to bottom, #FFD8EA, #FFF1F7);
+                     -fx-background-radius: 0 45 45 0;"
 
               AnchorPane.topAnchor="0"
               AnchorPane.bottomAnchor="0"
               AnchorPane.leftAnchor="0">
 
+            <padding>
+                <Insets top="40" right="40" bottom="40" left="40"/>
+            </padding>
+
             <children>
 
                 <Label text="💅"
-                       style="-fx-font-size: 80px;" />
+                       style="-fx-font-size: 95px;" />
 
                 <Label text="GLAMMY"
-                       style="-fx-font-size: 45px;
-                              -fx-font-weight: bold;
-                              -fx-text-fill: #D86F9B;" />
 
-                <Label text="Glow Beyond Beauty"
-                       style="-fx-font-size: 18px;
-                              -fx-text-fill: #8A6F7B;" />
+                       style="-fx-font-size: 58px;
+                              -fx-font-weight: bold;
+                              -fx-text-fill: #E75480;
+                              -fx-effect: dropshadow(gaussian, #FFB6D5, 18, 0.5, 0, 0);" />
+
+                <Label text="Glow Beyond Beauty ✨"
+
+                       style="-fx-font-size: 21px;
+                              -fx-text-fill: #9A7383;
+                              -fx-font-style: italic;" />
 
                 <Label text="Book your beauty appointments easily and elegantly."
+
                        wrapText="true"
-                       maxWidth="280"
-                       style="-fx-font-size: 15px;
-                              -fx-text-fill: #8A6F7B;
+                       maxWidth="320"
+
+                       style="-fx-font-size: 16px;
+                              -fx-text-fill: #866B78;
                               -fx-alignment: center;" />
 
             </children>
@@ -52,70 +91,125 @@
         <!-- RIGHT SIDE -->
 
         <VBox alignment="CENTER"
-              spacing="25"
+              spacing="20"
 
-              AnchorPane.topAnchor="0"
-              AnchorPane.bottomAnchor="0"
               AnchorPane.leftAnchor="500"
-              AnchorPane.rightAnchor="0">
+              AnchorPane.rightAnchor="0"
+              AnchorPane.topAnchor="0"
+              AnchorPane.bottomAnchor="0">
 
             <children>
 
                 <!-- LOGIN CARD -->
 
                 <VBox alignment="CENTER"
-                      spacing="20"
-                      prefWidth="420"
-                      prefHeight="500"
+                      spacing="22"
+
+                      prefWidth="430"
+                      prefHeight="520"
+
                       style="-fx-background-color: white;
                              -fx-background-radius: 35;
-                             -fx-padding: 40;">
+                             -fx-padding: 45;
+                             -fx-border-color: #FFE2EC;
+                             -fx-border-radius: 35;
+                             -fx-effect: dropshadow(gaussian, rgba(216,111,155,0.18), 30, 0.3, 0, 10);">
 
                     <children>
 
                         <Label text="Welcome Back 💖"
+
                                style="-fx-font-size: 38px;
                                       -fx-font-weight: bold;
                                       -fx-text-fill: #D86F9B;" />
 
                         <Label text="Login to continue your beauty journey."
+
                                style="-fx-font-size: 14px;
-                                      -fx-text-fill: #8A6F7B;" />
+                                      -fx-text-fill: #9B7A88;" />
 
-                        <TextField promptText="Enter your email"
-                                   prefWidth="300"
-                                   prefHeight="50"
-                                   style="-fx-background-radius: 15;
+                        <!-- EMAIL -->
+
+                        <TextField fx:id="emailField"
+                                   promptText="Enter your email"
+
+                                   prefWidth="320"
+                                   prefHeight="52"
+
+                                   style="-fx-background-color: #FFF8FB;
+                                          -fx-background-radius: 18;
+                                          -fx-border-radius: 18;
+                                          -fx-border-color: #F4C9DA;
+                                          -fx-border-width: 1.5;
                                           -fx-font-size: 14px;
-                                          -fx-padding: 10;" />
+                                          -fx-padding: 12;" />
 
-                        <PasswordField promptText="Enter your password"
-                                       prefWidth="300"
-                                       prefHeight="50"
-                                       style="-fx-background-radius: 15;
+                        <!-- PASSWORD -->
+
+                        <PasswordField fx:id="passwordField"
+                                       promptText="Enter your password"
+
+                                       prefWidth="320"
+                                       prefHeight="52"
+
+                                       style="-fx-background-color: #FFF8FB;
+                                              -fx-background-radius: 18;
+                                              -fx-border-radius: 18;
+                                              -fx-border-color: #F4C9DA;
+                                              -fx-border-width: 1.5;
                                               -fx-font-size: 14px;
-                                              -fx-padding: 10;" />
+                                              -fx-padding: 12;" />
+
+                        <!-- LOGIN BUTTON -->
 
                         <Button text="Login"
-                                prefWidth="300"
-                                prefHeight="50"
-                                style="-fx-background-color: #E8A0BF;
+                                onAction="#goToHome"
+
+                                prefWidth="320"
+                                prefHeight="52"
+
+                                style="-fx-background-color: linear-gradient(to right, #E75480, #F17CA8);
                                        -fx-text-fill: white;
                                        -fx-font-size: 15px;
                                        -fx-font-weight: bold;
-                                       -fx-background-radius: 18;" />
+                                       -fx-background-radius: 22;
+                                       -fx-cursor: hand;
+                                       -fx-effect: dropshadow(gaussian, #FFB6D5, 15, 0.4, 0, 5);" />
 
-                        <Button text="Create Account"
+                        <!-- CREATE ACCOUNT -->
+
+                        <Button text="Register"
+
+                                onAction="#goToRegister"
+
                                 prefWidth="300"
-                                prefHeight="50"
-                                style="-fx-background-color: white;
-                                       -fx-text-fill: #D86F9B;
-                                       -fx-font-size: 15px;
-                                       -fx-font-weight: bold;
-                                       -fx-border-color: #E8A0BF;
-                                       -fx-border-radius: 18;
-                                       -fx-background-radius: 18;" />
+                                prefHeight="52"
 
+                                style="-fx-background-color:
+               linear-gradient(to right,
+               rgba(255,255,255,0.95),
+               rgba(255,245,249,0.95));
+
+               -fx-text-fill: #D86F9B;
+
+               -fx-font-size: 15px;
+               -fx-font-weight: bold;
+
+               -fx-border-color: #F3BDD3;
+               -fx-border-width: 1.5;
+
+               -fx-border-radius: 22;
+               -fx-background-radius: 22;
+
+               -fx-cursor: hand;
+
+               -fx-effect:
+               dropshadow(gaussian,
+               rgba(232,160,191,0.18),
+               14,
+               0.2,
+               0,
+               4);" />
                     </children>
 
                 </VBox>

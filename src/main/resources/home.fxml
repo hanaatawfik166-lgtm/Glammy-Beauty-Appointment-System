@@ -3,22 +3,218 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
 
-<AnchorPane prefHeight="750.0"
+<AnchorPane
+        fx:controller="com.example.glammy.controller.HomeController"
+            prefHeight="750.0"
             prefWidth="1300.0"
             xmlns="http://javafx.com/javafx/21"
             xmlns:fx="http://javafx.com/fxml/1"
-            style="-fx-background-color: linear-gradient(to bottom right, #FFF5F7, #FDEBF2);">
+
+            style="-fx-background-color:
+                   linear-gradient(to bottom right,
+                   #FFF7FB,
+                   #FFEAF4,
+                   #FFF0F6,
+                   #FFF9FC);">
 
     <children>
 
+        <!-- GLOW CIRCLES -->
+
+        <Circle radius="170"
+                layoutX="1180"
+                layoutY="90"
+                opacity="0.10"
+                fill="#FFB6D5"/>
+
+        <Circle radius="120"
+                layoutX="980"
+                layoutY="650"
+                opacity="0.08"
+                fill="#FFD6E7"/>
+
+        <Circle radius="80"
+                layoutX="760"
+                layoutY="130"
+                opacity="0.07"
+                fill="#FFC2DC"/>
+
+        <Circle radius="55"
+                layoutX="1080"
+                layoutY="320"
+                opacity="0.06"
+                fill="#FFE4EF"/>
+
+        <!-- LIPSTICKS -->
+
+        <VBox layoutX="1030"
+              layoutY="80"
+              rotate="25"
+              opacity="0.13"
+              spacing="4">
+
+            <children>
+
+                <Rectangle width="24"
+                           height="78"
+                           arcWidth="14"
+                           arcHeight="14"
+                           fill="#2E2E2E"/>
+
+                <Rectangle width="24"
+                           height="38"
+                           arcWidth="14"
+                           arcHeight="14"
+                           fill="#E75480"/>
+
+            </children>
+
+        </VBox>
+
+        <VBox layoutX="1180"
+              layoutY="230"
+              rotate="-18"
+              opacity="0.11"
+              spacing="4">
+
+            <children>
+
+                <Rectangle width="22"
+                           height="72"
+                           arcWidth="14"
+                           arcHeight="14"
+                           fill="#353535"/>
+
+                <Rectangle width="22"
+                           height="34"
+                           arcWidth="14"
+                           arcHeight="14"
+                           fill="#FF5C93"/>
+
+            </children>
+
+        </VBox>
+
+        <VBox layoutX="1120"
+              layoutY="520"
+              rotate="15"
+              opacity="0.10"
+              spacing="4">
+
+            <children>
+
+                <Rectangle width="20"
+                           height="68"
+                           arcWidth="12"
+                           arcHeight="12"
+                           fill="#2A2A2A"/>
+
+                <Rectangle width="20"
+                           height="32"
+                           arcWidth="12"
+                           arcHeight="12"
+                           fill="#FF77A8"/>
+
+            </children>
+
+        </VBox>
+
+        <VBox layoutX="860"
+              layoutY="620"
+              rotate="-22"
+              opacity="0.09"
+              spacing="4">
+
+            <children>
+
+                <Rectangle width="18"
+                           height="60"
+                           arcWidth="10"
+                           arcHeight="10"
+                           fill="#303030"/>
+
+                <Rectangle width="18"
+                           height="28"
+                           arcWidth="10"
+                           arcHeight="10"
+                           fill="#E75480"/>
+
+            </children>
+
+        </VBox>
+
+        <!-- SPARKLES -->
+
+        <Label text="✦"
+               layoutX="910"
+               layoutY="180"
+
+               style="-fx-font-size: 28px;
+                      -fx-text-fill: #FFC7DD;
+                      -fx-opacity: 0.40;" />
+
+        <Label text="✧"
+               layoutX="1240"
+               layoutY="430"
+
+               style="-fx-font-size: 24px;
+                      -fx-text-fill: #FFD6E7;
+                      -fx-opacity: 0.35;" />
+
+        <Label text="✦"
+               layoutX="990"
+               layoutY="600"
+
+               style="-fx-font-size: 22px;
+                      -fx-text-fill: #FFBCD7;
+                      -fx-opacity: 0.35;" />
+
+        <!-- HEARTS -->
+
+        <Label text="💖"
+               layoutX="840"
+               layoutY="100"
+
+               style="-fx-font-size: 34px;
+                      -fx-opacity: 0.12;" />
+
+        <Label text="💕"
+               layoutX="1200"
+               layoutY="370"
+
+               style="-fx-font-size: 28px;
+                      -fx-opacity: 0.10;" />
+
+        <Label text="💄"
+               layoutX="930"
+               layoutY="670"
+
+               style="-fx-font-size: 42px;
+                      -fx-opacity: 0.10;" />
+
         <!-- SIDEBAR -->
 
-        <VBox prefWidth="250"
-              spacing="25"
-              style="-fx-background-color: white;
-                     -fx-padding: 30;
-                     -fx-background-radius: 0 30 30 0;"
+        <VBox prefWidth="260"
+              spacing="22"
+
+              style="-fx-background-color:
+                     linear-gradient(to bottom,
+                     rgba(255,255,255,0.95),
+                     rgba(255,245,249,0.92));
+
+                     -fx-padding: 35;
+                     -fx-background-radius: 0 38 38 0;
+
+                     -fx-effect:
+                     dropshadow(gaussian,
+                     rgba(232,160,191,0.22),
+                     25,
+                     0.2,
+                     0,
+                     8);"
 
               AnchorPane.topAnchor="0"
               AnchorPane.bottomAnchor="0"
@@ -26,64 +222,121 @@
 
             <children>
 
-                <Label text="GLAMMY ✨"
-                       style="-fx-font-size: 34px;
-                              -fx-font-weight: bold;
-                              -fx-text-fill: #D86F9B;" />
+                <!-- LOGO -->
 
-                <Label text="Beauty Appointment System"
-                       style="-fx-font-size: 13px;
-                              -fx-text-fill: #8A6F7B;" />
+                <VBox spacing="6">
+
+                    <children>
+
+                        <Label text="GLAMMY ✨"
+
+                               style="-fx-font-size: 38px;
+                                      -fx-font-weight: bold;
+                                      -fx-text-fill: #E75480;
+
+                                      -fx-effect:
+                                      dropshadow(gaussian,
+                                      #FFC4DA,
+                                      18,
+                                      0.8,
+                                      0,
+                                      0);" />
+
+                        <Label text="Luxury Beauty Experience"
+
+                               style="-fx-font-size: 13px;
+                                      -fx-text-fill: #9A7383;" />
+
+                    </children>
+
+                </VBox>
 
                 <Separator />
 
+                <!-- MENU -->
+
                 <Button text="🏠 Dashboard"
-                        prefWidth="190"
-                        prefHeight="50"
-                        style="-fx-background-color: #FCE4EC;
+                        prefWidth="200"
+                        prefHeight="52"
+
+                        style="-fx-background-color:
+                               linear-gradient(to right,
+                               #FFD7E7,
+                               #FFE6F0);
+
                                -fx-text-fill: #D86F9B;
                                -fx-font-size: 15px;
                                -fx-font-weight: bold;
+
                                -fx-background-radius: 18;" />
 
                 <Button text="📅 Appointments"
-                        prefWidth="190"
-                        prefHeight="50"
+                        prefWidth="200"
+                        prefHeight="48"
+
                         style="-fx-background-color: transparent;
                                -fx-font-size: 15px;
+                               -fx-font-weight: bold;
+                               -fx-text-fill: #7E6973;
                                -fx-alignment: CENTER-LEFT;" />
 
-                <Button text="💄 Services"
-                        prefWidth="190"
-                        prefHeight="50"
+                <Button text="👁 Lashes"
+                        prefWidth="200"
+                        prefHeight="48"
+
                         style="-fx-background-color: transparent;
                                -fx-font-size: 15px;
+                               -fx-font-weight: bold;
+                               -fx-text-fill: #7E6973;
                                -fx-alignment: CENTER-LEFT;" />
 
-                <Button text="💖 Favorites"
-                        prefWidth="190"
-                        prefHeight="50"
+                <Button text="💅 Hard Gel"
+                        prefWidth="200"
+                        prefHeight="48"
+
                         style="-fx-background-color: transparent;
                                -fx-font-size: 15px;
+                               -fx-font-weight: bold;
+                               -fx-text-fill: #7E6973;
                                -fx-alignment: CENTER-LEFT;" />
 
-                <Button text="👤 Profile"
-                        prefWidth="190"
-                        prefHeight="50"
+                <Button text="✨ Facial"
+                        prefWidth="200"
+                        prefHeight="48"
+
                         style="-fx-background-color: transparent;
                                -fx-font-size: 15px;
+                               -fx-font-weight: bold;
+                               -fx-text-fill: #7E6973;
+                               -fx-alignment: CENTER-LEFT;" />
+
+
+
+
+
+                <Button text="💇 Hair Style"
+                        prefWidth="200"
+                        prefHeight="48"
+
+                        style="-fx-background-color: transparent;
+                               -fx-font-size: 15px;
+                               -fx-font-weight: bold;
+                               -fx-text-fill: #7E6973;
                                -fx-alignment: CENTER-LEFT;" />
 
                 <Region VBox.vgrow="ALWAYS"/>
 
                 <Button text="Logout"
+                        onAction="#goToLogin"
+
                         prefWidth="190"
                         prefHeight="50"
+
                         style="-fx-background-color: #E8A0BF;
-                               -fx-text-fill: white;
-                               -fx-font-size: 15px;
-                               -fx-font-weight: bold;
-                               -fx-background-radius: 18;" />
+               -fx-text-fill: white;
+               -fx-font-size: 15px;
+               -fx-font-weight: bold;
+               -fx-background-radius: 18;" />
 
             </children>
 
@@ -92,8 +345,9 @@
         <!-- MAIN CONTENT -->
 
         <VBox spacing="35"
+
               AnchorPane.topAnchor="35"
-              AnchorPane.leftAnchor="290"
+              AnchorPane.leftAnchor="300"
               AnchorPane.rightAnchor="35"
               AnchorPane.bottomAnchor="35">
 
@@ -105,17 +359,27 @@
 
                     <children>
 
-                        <VBox spacing="8">
+                        <VBox spacing="10">
 
                             <children>
 
                                 <Label text="Welcome To Glammy ✨"
-                                       style="-fx-font-size: 40px;
-                                              -fx-font-weight: bold;
-                                              -fx-text-fill: #D86F9B;" />
 
-                                <Label text="Choose your favorite beauty service and enjoy your luxury experience."
-                                       style="-fx-font-size: 15px;
+                                       style="-fx-font-size: 46px;
+                                              -fx-font-weight: bold;
+                                              -fx-text-fill: #E75480;
+
+                                              -fx-effect:
+                                              dropshadow(gaussian,
+                                              #FFC8DD,
+                                              22,
+                                              0.9,
+                                              0,
+                                              0);" />
+
+                                <Label text="Luxury beauty starts here. Feel gorgeous every day 💖"
+
+                                       style="-fx-font-size: 16px;
                                               -fx-text-fill: #8A6F7B;" />
 
                             </children>
@@ -124,11 +388,24 @@
 
                         <Region HBox.hgrow="ALWAYS"/>
 
+                        <!-- SEARCH -->
+
                         <TextField promptText="Search services..."
-                                   prefWidth="230"
-                                   prefHeight="42"
-                                   style="-fx-background-radius: 15;
-                                          -fx-padding: 10;" />
+
+                                   prefWidth="250"
+                                   prefHeight="46"
+
+                                   style="-fx-background-color:
+                                          rgba(255,255,255,0.95);
+
+                                          -fx-background-radius: 18;
+                                          -fx-border-radius: 18;
+
+                                          -fx-border-color: #F6C9DA;
+                                          -fx-border-width: 1.5;
+
+                                          -fx-padding: 10;
+                                          -fx-font-size: 14px;" />
 
                     </children>
 
@@ -147,9 +424,18 @@
                               spacing="15"
                               prefWidth="250"
                               prefHeight="300"
+
                               style="-fx-background-color: white;
                                      -fx-background-radius: 30;
-                                     -fx-padding: 25;">
+                                     -fx-padding: 25;
+
+                                     -fx-effect:
+                                     dropshadow(gaussian,
+                                     rgba(232,160,191,0.18),
+                                     18,
+                                     0.2,
+                                     0,
+                                     5);">
 
                             <children>
 
@@ -157,20 +443,23 @@
                                        style="-fx-font-size: 60px;" />
 
                                 <Label text="Book Appointment"
+
                                        style="-fx-font-size: 22px;
                                               -fx-font-weight: bold;
                                               -fx-text-fill: #D86F9B;" />
 
                                 <Label text="Reserve your beauty session quickly and easily."
+
                                        wrapText="true"
                                        maxWidth="190"
+
                                        style="-fx-font-size: 14px;
-                                              -fx-text-fill: #8A6F7B;
-                                              -fx-alignment: center;" />
+                                              -fx-text-fill: #8A6F7B;" />
 
                                 <Button text="Open"
                                         prefWidth="150"
                                         prefHeight="45"
+
                                         style="-fx-background-color: #E8A0BF;
                                                -fx-text-fill: white;
                                                -fx-font-size: 15px;
@@ -187,9 +476,18 @@
                               spacing="15"
                               prefWidth="250"
                               prefHeight="300"
+
                               style="-fx-background-color: white;
                                      -fx-background-radius: 30;
-                                     -fx-padding: 25;">
+                                     -fx-padding: 25;
+
+                                     -fx-effect:
+                                     dropshadow(gaussian,
+                                     rgba(232,160,191,0.18),
+                                     18,
+                                     0.2,
+                                     0,
+                                     5);">
 
                             <children>
 
@@ -197,20 +495,23 @@
                                        style="-fx-font-size: 60px;" />
 
                                 <Label text="Beauty Tips"
+
                                        style="-fx-font-size: 22px;
                                               -fx-font-weight: bold;
                                               -fx-text-fill: #D86F9B;" />
 
                                 <Label text="Explore beauty secrets and skincare recommendations."
+
                                        wrapText="true"
                                        maxWidth="190"
+
                                        style="-fx-font-size: 14px;
-                                              -fx-text-fill: #8A6F7B;
-                                              -fx-alignment: center;" />
+                                              -fx-text-fill: #8A6F7B;" />
 
                                 <Button text="Explore"
                                         prefWidth="150"
                                         prefHeight="45"
+
                                         style="-fx-background-color: #FFD6E7;
                                                -fx-text-fill: #D86F9B;
                                                -fx-font-size: 15px;
@@ -227,9 +528,18 @@
                               spacing="15"
                               prefWidth="250"
                               prefHeight="300"
+
                               style="-fx-background-color: white;
                                      -fx-background-radius: 30;
-                                     -fx-padding: 25;">
+                                     -fx-padding: 25;
+
+                                     -fx-effect:
+                                     dropshadow(gaussian,
+                                     rgba(232,160,191,0.18),
+                                     18,
+                                     0.2,
+                                     0,
+                                     5);">
 
                             <children>
 
@@ -237,20 +547,23 @@
                                        style="-fx-font-size: 60px;" />
 
                                 <Label text="Services"
+
                                        style="-fx-font-size: 22px;
                                               -fx-font-weight: bold;
                                               -fx-text-fill: #D86F9B;" />
 
                                 <Label text="Discover premium salon and beauty services."
+
                                        wrapText="true"
                                        maxWidth="190"
+
                                        style="-fx-font-size: 14px;
-                                              -fx-text-fill: #8A6F7B;
-                                              -fx-alignment: center;" />
+                                              -fx-text-fill: #8A6F7B;" />
 
                                 <Button text="View"
                                         prefWidth="150"
                                         prefHeight="45"
+
                                         style="-fx-background-color: #E8A0BF;
                                                -fx-text-fill: white;
                                                -fx-font-size: 15px;
