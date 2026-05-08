@@ -131,9 +131,9 @@
                         <!-- EMAIL -->
 
                         <TextField fx:id="emailField"
-                                   promptText="Enter your email"
+                                   promptText="Email"
 
-                                   prefWidth="320"
+                        prefWidth="320"
                                    prefHeight="52"
 
                                    style="-fx-background-color: #FFF8FB;
@@ -147,7 +147,7 @@
                         <!-- PASSWORD -->
 
                         <PasswordField fx:id="passwordField"
-                                       promptText="Enter your password"
+                                       promptText="Password"
 
                                        prefWidth="320"
                                        prefHeight="52"
@@ -163,8 +163,7 @@
                         <!-- LOGIN BUTTON -->
 
                         <Button text="Login"
-                                onAction="#goToHome"
-
+                                onAction="#handleLogin"
                                 prefWidth="320"
                                 prefHeight="52"
 

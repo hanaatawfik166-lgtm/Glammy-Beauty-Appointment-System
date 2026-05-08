@@ -8,24 +8,51 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
+import javafx.scene.control.Alert;
+import javafx.scene.control.PasswordField;
+import javafx.scene.control.TextField;
+
 import java.io.IOException;
 
 public class LoginController {
 
     @FXML
-    private void goToHome(ActionEvent event) throws IOException {
+    private TextField emailField;
 
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/home.fxml"));
+    @FXML
+    private PasswordField passwordField;
 
-        Parent root = loader.load();
+    @FXML
+    private void handleLogin(ActionEvent event) throws IOException {
 
-        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        String email = emailField.getText();
 
-        Scene scene = new Scene(root);
+        String password = passwordField.getText();
 
-        stage.setScene(scene);
+        // EMPTY VALIDATION
+        if(email.isEmpty() || password.isEmpty()) {
 
-        stage.centerOnScreen();
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+
+            alert.setTitle("Error");
+            alert.setHeaderText(null);
+            alert.setContentText("Please enter email and password!");
+
+            alert.showAndWait();
+
+            return;
+        }
+
+        // LOGIN SUCCESS
+        Parent root =
+                FXMLLoader.load(getClass().getResource("/home.fxml"));
+
+        Stage stage =
+                (Stage)((Node)event.getSource())
+                        .getScene()
+                        .getWindow();
+
+        stage.setScene(new Scene(root));
 
         stage.show();
     }
@@ -33,17 +60,15 @@ public class LoginController {
     @FXML
     private void goToRegister(ActionEvent event) throws IOException {
 
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/register.fxml"));
+        Parent root =
+                FXMLLoader.load(getClass().getResource("/register.fxml"));
 
-        Parent root = loader.load();
+        Stage stage =
+                (Stage)((Node)event.getSource())
+                        .getScene()
+                        .getWindow();
 
-        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-
-        Scene scene = new Scene(root);
-
-        stage.setScene(scene);
-
-        stage.centerOnScreen();
+        stage.setScene(new Scene(root));
 
         stage.show();
     }
