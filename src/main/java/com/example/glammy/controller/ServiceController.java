@@ -10,8 +10,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class RegisterController {
-
+public class ServiceController {
 
     @FXML
     private void goToHome(ActionEvent event) throws IOException {
@@ -21,26 +20,6 @@ public class RegisterController {
         Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
 
         stage.setScene(new Scene(root));
-        stage.show();
-    }
-
-    @FXML
-    private void goToLogin(ActionEvent event) throws IOException {
-
-        FXMLLoader loader =
-                new FXMLLoader(getClass().getResource("/login.fxml"));
-
-        Parent root = loader.load();
-
-        Stage stage =
-                (Stage) ((Node) event.getSource())
-                        .getScene()
-                        .getWindow();
-
-        stage.setScene(new Scene(root));
-
-        stage.centerOnScreen();
-
         stage.show();
     }
 }

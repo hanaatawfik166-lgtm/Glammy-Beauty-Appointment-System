@@ -165,6 +165,7 @@
 
                 <!-- BUTTON -->
                 <Button text="Create Account"
+                        onAction="#goToHome"
                         prefWidth="350"
                         prefHeight="60"
                         style="-fx-background-color: linear-gradient(to right, #FF8FB6, #FFBFD3);

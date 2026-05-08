@@ -13,6 +13,17 @@ import java.io.IOException;
 public class HomeController {
 
     @FXML
+    private void goToService(ActionEvent event) throws IOException {
+
+        Parent root = FXMLLoader.load(getClass().getResource("/service.fxml"));
+
+        Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+
+        stage.setScene(new Scene(root));
+        stage.show();
+    }
+
+    @FXML
     private void goToBooking(ActionEvent event) throws IOException {
 
         Parent root = FXMLLoader.load(getClass().getResource("/booking.fxml"));

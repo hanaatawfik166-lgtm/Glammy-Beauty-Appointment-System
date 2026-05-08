@@ -582,7 +582,7 @@
                                        style="-fx-font-size: 14px;
                                               -fx-text-fill: #8A6F7B;" />
                                 <Button text="View"
-
+                                        onAction="#goToService"
 
                                         prefWidth="150"
                                         prefHeight="45"
