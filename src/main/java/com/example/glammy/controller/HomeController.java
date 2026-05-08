@@ -13,22 +13,46 @@ import java.io.IOException;
 public class HomeController {
 
     @FXML
-    private void goToLogin(ActionEvent event) throws IOException {
+    private void goToBooking(ActionEvent event) throws IOException {
 
-        FXMLLoader loader =
-                new FXMLLoader(getClass().getResource("/login.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/booking.fxml"));
 
-        Parent root = loader.load();
-
-        Stage stage =
-                (Stage) ((Node) event.getSource())
-                        .getScene()
-                        .getWindow();
+        Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
 
         stage.setScene(new Scene(root));
+        stage.show();
+    }
 
-        stage.centerOnScreen();
+    @FXML
+    private void goToTips(ActionEvent event) throws IOException {
 
+        Parent root = FXMLLoader.load(getClass().getResource("/BeautyTips.fxml"));
+
+        Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+
+        stage.setScene(new Scene(root));
+        stage.show();
+    }
+
+    @FXML
+    private void goToAppointments(ActionEvent event) throws IOException {
+
+        Parent root = FXMLLoader.load(getClass().getResource("/appointments.fxml"));
+
+        Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+
+        stage.setScene(new Scene(root));
+        stage.show();
+    }
+
+    @FXML
+    private void goToLogin(ActionEvent event) throws IOException {
+
+        Parent root = FXMLLoader.load(getClass().getResource("/login.fxml"));
+
+        Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+
+        stage.setScene(new Scene(root));
         stage.show();
     }
 }

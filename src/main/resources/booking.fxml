@@ -5,7 +5,10 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.shape.Circle?>
 
-<AnchorPane prefHeight="700.0" prefWidth="1300.0"
+<AnchorPane
+
+        fx:controller="com.example.glammy.controller.BookingController"
+        prefHeight="700.0" prefWidth="1300.0"
             xmlns="http://javafx.com/javafx/21"
             xmlns:fx="http://javafx.com/fxml/1"
             style="-fx-background-color: linear-gradient(to bottom right, #FFF5F7, #FFE3EC);">
@@ -144,31 +147,35 @@
                 </VBox>
 
                 <!-- Name -->
-                <TextField promptText="Full Name"
-                           prefWidth="320"
+                <TextField fx:id="nameField"
+                           promptText="Full Name"
+
                            prefHeight="45"
                            style="-fx-background-radius: 18;
                                   -fx-font-size: 14px;" />
 
                 <!-- Service -->
-                <ComboBox prefWidth="320"
+                <ComboBox fx:id="serviceBox"
+                          prefWidth="320"
                           prefHeight="45"
                           promptText="Choose Service"
                           style="-fx-background-radius: 18;
-                                 -fx-font-size: 14px;" />
+                 -fx-font-size: 14px;" />
 
                 <!-- Date -->
-                <DatePicker prefWidth="320"
+                <DatePicker fx:id="datePicker"
+                            prefWidth="320"
                             prefHeight="45"
                             style="-fx-background-radius: 18;
-                                   -fx-font-size: 14px;" />
+                   -fx-font-size: 14px;" />
 
                 <!-- Time -->
-                <ComboBox prefWidth="320"
+                <ComboBox fx:id="timeBox"
+                          prefWidth="320"
                           prefHeight="45"
                           promptText="Choose Time"
                           style="-fx-background-radius: 18;
-                                 -fx-font-size: 14px;" />
+                 -fx-font-size: 14px;" />
 
                 <!-- Notes -->
                 <TextArea promptText="Special Notes..."
@@ -182,6 +189,8 @@
                 <HBox spacing="15" alignment="CENTER">
 
                     <Button text="Confirm"
+
+                            onAction="#confirmBooking"
                             prefWidth="145"
                             prefHeight="45"
                             style="-fx-background-color: #E8A0BF;
@@ -191,6 +200,7 @@
                                    -fx-background-radius: 25;" />
 
                     <Button text="Cancel"
+                            onAction="#goToHome"
                             prefWidth="145"
                             prefHeight="45"
                             style="-fx-background-color: white;

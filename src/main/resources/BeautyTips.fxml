@@ -5,10 +5,13 @@
 <?import javafx.scene.effect.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="900.0" prefWidth="1500.0"
-            xmlns="http://javafx.com/javafx/21"
-            xmlns:fx="http://javafx.com/fxml/1"
-            style="-fx-background-color: linear-gradient(to bottom right, #FFF5F7, #FFE3EC, #FFD4E5);">
+<AnchorPane
+        fx:controller="com.example.glammy.controller.BeautyTipsController"
+        prefHeight="900.0"
+        prefWidth="1500.0"
+        xmlns="http://javafx.com/javafx/21"
+        xmlns:fx="http://javafx.com/fxml/1"
+        style="-fx-background-color: linear-gradient(to bottom right, #FFF5F7, #FFE3EC, #FFD4E5);">
 
     <children>
 
@@ -86,7 +89,7 @@
                             <Insets top="30" right="25" bottom="30" left="25"/>
                         </padding>
 
-                        <Label text="🧴"
+                        <Label text="🧖‍♀️"
                                style="-fx-font-size: 65px;" />
 
                         <Label text="Skin Care"
@@ -97,7 +100,8 @@
                         <Label text="Always remove makeup before sleeping and keep your skin hydrated 🌸"
                                wrapText="true"
                                style="-fx-font-size: 14px;
-                                      -fx-text-fill: #B57C94;" />
+                                      -fx-text-fill: #B57C94;
+                                      -fx-text-alignment: center;" />
 
                         <Button text="Read More"
                                 prefWidth="200"
@@ -106,7 +110,8 @@
                                        -fx-text-fill: white;
                                        -fx-font-size: 15px;
                                        -fx-font-weight: bold;
-                                       -fx-background-radius: 22;" />
+                                       -fx-background-radius: 22;
+                                       -fx-cursor: hand;" />
 
                     </VBox>
 
@@ -142,7 +147,8 @@
                         <Label text="Use hair masks weekly and avoid excessive heat styling ✨"
                                wrapText="true"
                                style="-fx-font-size: 14px;
-                                      -fx-text-fill: #B57C94;" />
+                                      -fx-text-fill: #B57C94;
+                                      -fx-text-alignment: center;" />
 
                         <Button text="Read More"
                                 prefWidth="200"
@@ -151,7 +157,8 @@
                                        -fx-text-fill: white;
                                        -fx-font-size: 15px;
                                        -fx-font-weight: bold;
-                                       -fx-background-radius: 22;" />
+                                       -fx-background-radius: 22;
+                                       -fx-cursor: hand;" />
 
                     </VBox>
 
@@ -187,7 +194,8 @@
                         <Label text="Choose soft pink shades for a natural glam everyday look 💕"
                                wrapText="true"
                                style="-fx-font-size: 14px;
-                                      -fx-text-fill: #B57C94;" />
+                                      -fx-text-fill: #B57C94;
+                                      -fx-text-alignment: center;" />
 
                         <Button text="Read More"
                                 prefWidth="200"
@@ -196,7 +204,8 @@
                                        -fx-text-fill: white;
                                        -fx-font-size: 15px;
                                        -fx-font-weight: bold;
-                                       -fx-background-radius: 22;" />
+                                       -fx-background-radius: 22;
+                                       -fx-cursor: hand;" />
 
                     </VBox>
 
@@ -205,6 +214,30 @@
             </VBox>
 
         </StackPane>
+
+        <!-- HOME BUTTON -->
+        <Button text="🏠Home"
+                onAction="#goToHome"
+                prefWidth="150"
+                prefHeight="48"
+                AnchorPane.topAnchor="25.0"
+                AnchorPane.leftAnchor="30.0"
+                style="-fx-background-color: linear-gradient(to right, #E8A0BF, #D86F9B);
+                       -fx-text-fill: white;
+                       -fx-font-size: 15px;
+                       -fx-font-weight: bold;
+                       -fx-background-radius: 25;
+                       -fx-border-radius: 25;
+                       -fx-border-color: white;
+                       -fx-border-width: 2;
+                       -fx-cursor: hand;">
+
+            <effect>
+                <DropShadow radius="16"
+                            offsetY="4"
+                            color="#E8A0BF"/>
+            </effect>
+        </Button>
 
     </children>
 

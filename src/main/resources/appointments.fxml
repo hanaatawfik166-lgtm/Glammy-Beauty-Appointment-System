@@ -6,7 +6,10 @@
 <?import javafx.scene.shape.Circle?>
 <?import javafx.scene.shape.Rectangle?>
 
-<AnchorPane prefHeight="750.0"
+<AnchorPane
+
+        fx:controller="com.example.glammy.controller.AppointmentsController"
+        prefHeight="750.0"
             prefWidth="1300.0"
             xmlns="http://javafx.com/javafx/21"
             xmlns:fx="http://javafx.com/fxml/1"
@@ -617,6 +620,8 @@
                         prefWidth="190"
                         prefHeight="50"
 
+                        onAction="#goToHome"
+
                         style="-fx-background-color:
                                linear-gradient(to right,
                                #FFD7E7,
@@ -670,7 +675,8 @@
 
                 <Region VBox.vgrow="ALWAYS"/>
 
-                <Button text="Logout"
+                <Button text="🏠Home"
+                        onAction="#goToHome"
                         prefWidth="190"
                         prefHeight="50"
 
@@ -904,6 +910,7 @@
                                 <Region HBox.hgrow="ALWAYS"/>
 
                                 <Button text="+ New Appointment"
+                                        onAction="#goToBooking"
                                         prefWidth="220"
                                         prefHeight="45"
 
@@ -924,33 +931,31 @@
 
                         <!-- TABLE -->
 
-                        <TableView prefHeight="350"
-
-                                   style="-fx-background-radius: 20;
-                                          -fx-border-radius: 20;
-                                          -fx-border-color: #F5D3E1;">
+                        <TableView fx:id="tableView"
+                                   prefHeight="300"
+                                   prefWidth="600">
 
                             <columns>
 
-                                <TableColumn text="Service"
-                                             prefWidth="180"/>
+                                <TableColumn fx:id="serviceColumn"
+                                             text="Service"
+                                             prefWidth="200"/>
 
-                                <TableColumn text="Specialist"
-                                             prefWidth="180"/>
+                                <TableColumn fx:id="dateColumn"
+                                             text="Date"
+                                             prefWidth="200"/>
 
-                                <TableColumn text="Date"
-                                             prefWidth="180"/>
+                                <TableColumn fx:id="timeColumn"
+                                             text="Time"
+                                             prefWidth="200"/>
 
-                                <TableColumn text="Time"
-                                             prefWidth="180"/>
-
-                                <TableColumn text="Status"
-                                             prefWidth="180"/>
+                                <TableColumn fx:id="nameColumn"
+                                             text="Name"
+                                             prefWidth="150"/>
 
                             </columns>
 
                         </TableView>
-
                     </children>
 
                 </VBox>

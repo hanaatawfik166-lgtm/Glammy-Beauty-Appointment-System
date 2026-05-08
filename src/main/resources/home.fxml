@@ -7,13 +7,15 @@
 <?import javafx.scene.shape.Rectangle?>
 
 <AnchorPane
-        fx:controller="com.example.glammy.controller.HomeController"
-            prefHeight="750.0"
-            prefWidth="1300.0"
-            xmlns="http://javafx.com/javafx/21"
-            xmlns:fx="http://javafx.com/fxml/1"
 
-            style="-fx-background-color:
+
+        fx:controller="com.example.glammy.controller.HomeController"
+        prefHeight="750.0"
+        prefWidth="1300.0"
+        xmlns="http://javafx.com/javafx/21"
+        xmlns:fx="http://javafx.com/fxml/1"
+
+        style="-fx-background-color:
                    linear-gradient(to bottom right,
                    #FFF7FB,
                    #FFEAF4,
@@ -270,15 +272,18 @@
 
                                -fx-background-radius: 18;" />
 
+
                 <Button text="📅 Appointments"
+                        onAction="#goToAppointments"
+
                         prefWidth="200"
                         prefHeight="48"
 
                         style="-fx-background-color: transparent;
-                               -fx-font-size: 15px;
-                               -fx-font-weight: bold;
-                               -fx-text-fill: #7E6973;
-                               -fx-alignment: CENTER-LEFT;" />
+               -fx-font-size: 15px;
+               -fx-font-weight: bold;
+               -fx-text-fill: #7E6973;
+               -fx-alignment: CENTER-LEFT;" />
 
                 <Button text="👁 Lashes"
                         prefWidth="200"
@@ -442,11 +447,17 @@
                                 <Label text="💅"
                                        style="-fx-font-size: 60px;" />
 
-                                <Label text="Book Appointment"
+                                <Button text="💅 Booking"
+                                        onAction="#goToBooking"
 
-                                       style="-fx-font-size: 22px;
-                                              -fx-font-weight: bold;
-                                              -fx-text-fill: #D86F9B;" />
+                                        prefWidth="200"
+                                        prefHeight="48"
+
+                                        style="-fx-background-color: transparent;
+               -fx-font-size: 15px;
+               -fx-font-weight: bold;
+               -fx-text-fill: #7E6973;
+               -fx-alignment: CENTER-LEFT;" />
 
                                 <Label text="Reserve your beauty session quickly and easily."
 
@@ -457,14 +468,16 @@
                                               -fx-text-fill: #8A6F7B;" />
 
                                 <Button text="Open"
+                                        onAction="#goToBooking"
+
                                         prefWidth="150"
                                         prefHeight="45"
 
                                         style="-fx-background-color: #E8A0BF;
-                                               -fx-text-fill: white;
-                                               -fx-font-size: 15px;
-                                               -fx-font-weight: bold;
-                                               -fx-background-radius: 16;" />
+               -fx-text-fill: white;
+               -fx-font-size: 15px;
+               -fx-font-weight: bold;
+               -fx-background-radius: 16;" />
 
                             </children>
 
@@ -494,11 +507,18 @@
                                 <Label text="💄"
                                        style="-fx-font-size: 60px;" />
 
-                                <Label text="Beauty Tips"
+                                <Button text="💄 Beauty Tips"
+                                        onAction="#goToTips"
 
-                                       style="-fx-font-size: 22px;
-                                              -fx-font-weight: bold;
-                                              -fx-text-fill: #D86F9B;" />
+                                        prefWidth="200"
+                                        prefHeight="48"
+
+                                        style="-fx-background-color: transparent;
+               -fx-font-size: 15px;
+               -fx-font-weight: bold;
+               -fx-text-fill: #7E6973;
+               -fx-alignment: CENTER-LEFT;" />
+
 
                                 <Label text="Explore beauty secrets and skincare recommendations."
 
@@ -509,14 +529,16 @@
                                               -fx-text-fill: #8A6F7B;" />
 
                                 <Button text="Explore"
+                                        onAction="#goToTips"
+
                                         prefWidth="150"
                                         prefHeight="45"
 
                                         style="-fx-background-color: #FFD6E7;
-                                               -fx-text-fill: #D86F9B;
-                                               -fx-font-size: 15px;
-                                               -fx-font-weight: bold;
-                                               -fx-background-radius: 16;" />
+               -fx-text-fill: #D86F9B;
+               -fx-font-size: 15px;
+               -fx-font-weight: bold;
+               -fx-background-radius: 16;" />
 
                             </children>
 
@@ -559,17 +581,17 @@
 
                                        style="-fx-font-size: 14px;
                                               -fx-text-fill: #8A6F7B;" />
-
                                 <Button text="View"
+
+
                                         prefWidth="150"
                                         prefHeight="45"
 
                                         style="-fx-background-color: #E8A0BF;
-                                               -fx-text-fill: white;
-                                               -fx-font-size: 15px;
-                                               -fx-font-weight: bold;
-                                               -fx-background-radius: 16;" />
-
+               -fx-text-fill: white;
+               -fx-font-size: 15px;
+               -fx-font-weight: bold;
+               -fx-background-radius: 16;" />
                             </children>
 
                         </VBox>
